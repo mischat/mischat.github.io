@@ -1,0 +1,10 @@
+---
+id: 39
+title: Barcamp 09
+date: 2009-07-07T18:26:27+01:00
+author: Mischa
+layout: revision
+guid: http://mmt.me.uk/blog/2009/07/07/36-revision-3/
+permalink: /2009/07/07/36-revision-v1/
+---
+I went to  [Barcamp London 09](http://www.barcamplondon.org/) this year, it was the first one I have been to. Barcamp was a little less targetted than I am used to but I still met some interesting people and had some fun. I gave a talk on [&#8220;The Web of Data and Personal Information&#8221;](https://mmt.me.uk/blog/slides/barcamp09/), my slides were written in [slidy](http://www.w3.org/Talks/Tools/Slidy/), and are [valid XHTML](http://validator.w3.org/check?verbose=1&uri=http%3A%2F%2Fmmt.me.uk%2Fslides%2Fbarcamp09%2F). Am thinking I am going to stop using [M$ Powerpoint](http://en.wikipedia.org/wiki/Microsoft_PowerPoint) and am going to embrace open standards when writing slides from this point onwards&#8230; [W3C](http://www.w3.org/)++;

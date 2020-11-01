@@ -1,0 +1,22 @@
+url: https://mmt.me.uk/
+description: Mischa's Tuffield personal website and blog
+author: Mischa Tuffield
+twitter:
+  username: mischat
+  card: summary 
+social:
+  name: Mischa Tuffield
+  links:
+    - https://twitter.com/mischat
+    - https://www.facebook.com/mischat
+    - https://www.linkedin.com/in/mischat
+    - https://github.com/mischat
+    - https://keybase.io/mischat
+paginate: 5
+paginate_path: "/blog/page/:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
