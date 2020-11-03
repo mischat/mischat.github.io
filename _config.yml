@@ -1,10 +1,11 @@
 title: Mischa Tuffield
 author: Mischa Tuffield
 email: web@mmt.me.uk
-url: https://mmt.me.uk/
-description: Dad, Technology, Atheist, Happy...
+url: "https://mmt.me.uk/"
+description: Dad, Technologist, Atheist, Happy...
+github_username: mischat
 
-favicon: "favicon.ico"
+favicon: "./favicon.ico"
 
 twitter:
   username: mischat
@@ -22,7 +23,7 @@ social:
 
 permalink: /blog/:year/:month/:day/:title/
 
-remote-theme: riggraz/no-style-please
+remote_theme: riggraz/no-style-please
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
