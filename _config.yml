@@ -22,7 +22,7 @@ social:
 
 permalink: /blog/:year/:month/:day/:title/
 
-theme: no-style-please
+remote-theme: riggraz/no-style-please
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
