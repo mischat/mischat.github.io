@@ -5,7 +5,7 @@ date: 2010-12-13T00:05:14+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=455
-permalink: /2010/12/13/rss-reader/
+permalink: /blog/2010/12/13/rss-reader/
 itsec_enable_ssl:
   - "1"
 categories:

@@ -5,7 +5,7 @@ date: 2009-08-10T18:26:53+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=94
-permalink: /2009/08/10/meh-to-owlequivalentclass/
+permalink: /blog/2009/08/10/meh-to-owlequivalentclass/
 itsec_enable_ssl:
   - "1"
 categories:

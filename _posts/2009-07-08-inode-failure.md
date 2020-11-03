@@ -5,7 +5,7 @@ date: 2009-07-08T14:21:25+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=72
-permalink: /2009/07/08/inode-failure/
+permalink: /blog/2009/07/08/inode-failure/
 itsec_enable_ssl:
   - "1"
 categories:

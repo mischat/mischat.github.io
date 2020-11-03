@@ -5,7 +5,7 @@ date: 2009-07-08T11:20:28+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=43
-permalink: /2009/07/08/signing-and-verifying-documents-using-gnupg/
+permalink: /blog/2009/07/08/signing-and-verifying-documents-using-gnupg/
 itsec_enable_ssl:
   - "1"
 categories:

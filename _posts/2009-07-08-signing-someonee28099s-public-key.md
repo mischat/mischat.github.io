@@ -5,7 +5,7 @@ date: 2009-07-08T11:22:02+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=46
-permalink: '/2009/07/08/signing-someone%e2%80%99s-public-key/'
+permalink: /blog'/blog/2009/07/08/signing-someone%e2%80%99s-public-key/'
 itsec_enable_ssl:
   - "1"
 categories:

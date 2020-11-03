@@ -5,7 +5,7 @@ date: 2009-07-07T17:01:14+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=3
-permalink: /2009/07/07/3store-installation-guide/
+permalink: /blog/2009/07/07/3store-installation-guide/
 itsec_enable_ssl:
   - "1"
 categories:

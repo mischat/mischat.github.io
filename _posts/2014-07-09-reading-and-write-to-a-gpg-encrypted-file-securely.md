@@ -5,7 +5,7 @@ date: 2014-07-09T00:27:22+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=589
-permalink: /2014/07/09/reading-and-write-to-a-gpg-encrypted-file-securely/
+permalink: /blog/2014/07/09/reading-and-write-to-a-gpg-encrypted-file-securely/
 itsec_enable_ssl:
   - "1"
 categories:

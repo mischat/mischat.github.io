@@ -5,7 +5,7 @@ date: 2011-07-19T20:49:49+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=480
-permalink: /2011/07/19/sharenice/
+permalink: /blog/2011/07/19/sharenice/
 itsec_enable_ssl:
   - "1"
 categories:

@@ -5,7 +5,7 @@ date: 2010-11-21T20:13:32+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=369
-permalink: /2010/11/21/nhs-and-tracking/
+permalink: /blog/2010/11/21/nhs-and-tracking/
 openid_comments:
   - 'a:4:{i:0;s:4:"3429";i:1;s:4:"3444";i:2;s:4:"3880";i:3;s:4:"3905";}'
 itsec_enable_ssl:

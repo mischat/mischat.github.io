@@ -5,7 +5,7 @@ date: 2009-11-15T21:38:33+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=122
-permalink: /2009/11/15/private-browsing-with-safari/
+permalink: /blog/2009/11/15/private-browsing-with-safari/
 itsec_enable_ssl:
   - "1"
 categories:

@@ -5,7 +5,7 @@ date: 2011-12-05T03:28:04+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=542
-permalink: /2011/12/05/new-adventures/
+permalink: /blog/2011/12/05/new-adventures/
 openid_comments:
   - 'a:1:{i:0;s:5:"24999";}'
 itsec_enable_ssl:

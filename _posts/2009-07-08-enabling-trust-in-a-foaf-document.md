@@ -5,7 +5,7 @@ date: 2009-07-08T12:13:15+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=53
-permalink: /2009/07/08/enabling-trust-in-a-foaf-document/
+permalink: /blog/2009/07/08/enabling-trust-in-a-foaf-document/
 itsec_enable_ssl:
   - "1"
 categories:

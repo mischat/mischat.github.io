@@ -5,7 +5,7 @@ date: 2009-07-08T13:09:29+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=60
-permalink: /2009/07/08/firefox-3-5-and-w3c-geo-api/
+permalink: /blog/2009/07/08/firefox-3-5-and-w3c-geo-api/
 itsec_enable_ssl:
   - "1"
 categories:

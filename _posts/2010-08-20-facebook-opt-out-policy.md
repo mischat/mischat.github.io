@@ -5,7 +5,7 @@ date: 2010-08-20T13:24:26+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=237
-permalink: /2010/08/20/facebook-opt-out-policy/
+permalink: /blog/2010/08/20/facebook-opt-out-policy/
 openid_comments:
   - 'a:1:{i:0;s:4:"1844";}'
 itsec_enable_ssl:

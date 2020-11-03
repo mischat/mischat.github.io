@@ -5,7 +5,7 @@ date: 2009-07-09T12:18:15+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=82
-permalink: /2009/07/09/eeebuntu-on-a-asus-eeepc-701/
+permalink: /blog/2009/07/09/eeebuntu-on-a-asus-eeepc-701/
 itsec_enable_ssl:
   - "1"
 categories:

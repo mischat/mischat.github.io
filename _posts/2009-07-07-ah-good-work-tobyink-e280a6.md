@@ -5,7 +5,7 @@ date: 2009-07-07T18:24:25+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=32
-permalink: '/2009/07/07/ah-good-work-tobyink-%e2%80%a6/'
+permalink: /blog'/blog/2009/07/07/ah-good-work-tobyink-%e2%80%a6/'
 itsec_enable_ssl:
   - "1"
 categories:

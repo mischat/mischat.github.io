@@ -5,7 +5,7 @@ date: 2009-07-08T17:38:37+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=77
-permalink: /2009/07/08/determining-the-level-of-trust-of-a-digitally-signed-document/
+permalink: /blog/2009/07/08/determining-the-level-of-trust-of-a-digitally-signed-document/
 itsec_enable_ssl:
   - "1"
 categories:

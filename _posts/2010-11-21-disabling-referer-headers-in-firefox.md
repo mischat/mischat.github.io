@@ -5,7 +5,7 @@ date: 2010-11-21T17:25:22+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=392
-permalink: /2010/11/21/disabling-referer-headers-in-firefox/
+permalink: /blog/2010/11/21/disabling-referer-headers-in-firefox/
 itsec_enable_ssl:
   - "1"
 categories:

@@ -5,7 +5,7 @@ date: 2009-07-08T11:45:49+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=50
-permalink: /2009/07/08/enabling-a-writable-webid-with-webdav/
+permalink: /blog/2009/07/08/enabling-a-writable-webid-with-webdav/
 itsec_enable_ssl:
   - "1"
 categories:

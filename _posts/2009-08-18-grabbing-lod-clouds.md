@@ -5,7 +5,7 @@ date: 2009-08-18T10:57:09+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=92
-permalink: /2009/08/18/grabbing-lod-clouds/
+permalink: /blog/2009/08/18/grabbing-lod-clouds/
 itsec_enable_ssl:
   - "1"
 categories:

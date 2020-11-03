@@ -5,7 +5,7 @@ date: 2010-10-22T16:18:50+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=348
-permalink: /2010/10/22/nquads-to-trig/
+permalink: /blog/2010/10/22/nquads-to-trig/
 itsec_enable_ssl:
   - "1"
 categories:

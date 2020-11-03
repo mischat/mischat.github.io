@@ -5,7 +5,7 @@ date: 2009-07-07T18:22:11+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=27
-permalink: /2009/07/07/timemachine-to-a-linux-box/
+permalink: /blog/2009/07/07/timemachine-to-a-linux-box/
 itsec_enable_ssl:
   - "1"
 categories:

@@ -5,7 +5,7 @@ date: 2010-08-19T16:58:35+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=218
-permalink: /2010/08/19/signing-mail-in-10-6/
+permalink: /blog/2010/08/19/signing-mail-in-10-6/
 itsec_enable_ssl:
   - "1"
 categories:

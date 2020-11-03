@@ -5,7 +5,7 @@ date: 2009-07-07T17:41:46+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=19
-permalink: /2009/07/07/ld-duplicate-symbol-_g_bit_nth_lsf-mac-osx-leoparddarwin/
+permalink: /blog/2009/07/07/ld-duplicate-symbol-_g_bit_nth_lsf-mac-osx-leoparddarwin/
 itsec_enable_ssl:
   - "1"
 categories:

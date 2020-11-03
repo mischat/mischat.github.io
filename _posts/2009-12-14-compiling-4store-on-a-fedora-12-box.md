@@ -5,7 +5,7 @@ date: 2009-12-14T14:40:16+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=138
-permalink: /2009/12/14/compiling-4store-on-a-fedora-12-box/
+permalink: /blog/2009/12/14/compiling-4store-on-a-fedora-12-box/
 itsec_enable_ssl:
   - "1"
 categories:

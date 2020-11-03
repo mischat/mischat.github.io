@@ -5,7 +5,7 @@ date: 2009-07-08T11:16:31+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=40
-permalink: /2009/07/08/making-foaf-useful/
+permalink: /blog/2009/07/08/making-foaf-useful/
 itsec_enable_ssl:
   - "1"
 categories:

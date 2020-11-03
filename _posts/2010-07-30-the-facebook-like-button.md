@@ -5,7 +5,7 @@ date: 2010-07-30T01:13:32+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=148
-permalink: /2010/07/30/the-facebook-like-button/
+permalink: /blog/2010/07/30/the-facebook-like-button/
 openid_comments:
   - 'a:2:{i:0;s:4:"2939";i:1;s:4:"3445";}'
 itsec_enable_ssl:

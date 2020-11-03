@@ -5,7 +5,7 @@ date: 2009-07-07T18:15:04+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=24
-permalink: /2009/07/07/configuring-yum-to-only-install-64bit-binaries/
+permalink: /blog/2009/07/07/configuring-yum-to-only-install-64bit-binaries/
 itsec_enable_ssl:
   - "1"
 categories:

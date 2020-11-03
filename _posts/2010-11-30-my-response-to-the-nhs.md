@@ -5,7 +5,7 @@ date: 2010-11-30T13:57:54+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=445
-permalink: /2010/11/30/my-response-to-the-nhs/
+permalink: /blog/2010/11/30/my-response-to-the-nhs/
 itsec_enable_ssl:
   - "1"
 categories:

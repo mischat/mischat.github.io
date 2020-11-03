@@ -5,7 +5,7 @@ date: 2009-08-25T02:13:29+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=101
-permalink: /2009/08/25/personas-mit/
+permalink: /blog/2009/08/25/personas-mit/
 itsec_enable_ssl:
   - "1"
 categories:

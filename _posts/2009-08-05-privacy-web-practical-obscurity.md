@@ -5,7 +5,7 @@ date: 2009-08-05T16:09:00+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=87
-permalink: /2009/08/05/privacy-web-practical-obscurity/
+permalink: /blog/2009/08/05/privacy-web-practical-obscurity/
 itsec_enable_ssl:
   - "1"
 categories:

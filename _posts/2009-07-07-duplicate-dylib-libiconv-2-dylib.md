@@ -5,7 +5,7 @@ date: 2009-07-07T17:29:27+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=15
-permalink: /2009/07/07/duplicate-dylib-libiconv-2-dylib/
+permalink: /blog/2009/07/07/duplicate-dylib-libiconv-2-dylib/
 openid_comments:
   - 'a:1:{i:0;s:4:"1845";}'
 itsec_enable_ssl:

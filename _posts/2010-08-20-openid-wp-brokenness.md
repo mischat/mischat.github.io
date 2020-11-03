@@ -5,7 +5,7 @@ date: 2010-08-20T12:17:06+01:00
 author: Mischa
 layout: post
 guid: http://mmt.me.uk/blog/?p=225
-permalink: /2010/08/20/openid-wp-brokenness/
+permalink: /blog/2010/08/20/openid-wp-brokenness/
 openid_comments:
   - 'a:0:{}'
 itsec_enable_ssl:
