@@ -15,7 +15,7 @@ entries:
         url: false
         entries:
           - title: twitter
-            url: https://twitter.com/mischat{:target="_blank"}
+            url: https://twitter.com/mischat
           - title: facebook
             url: https://www.facebook.com/mischat
           - title: linkedin
