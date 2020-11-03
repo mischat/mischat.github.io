@@ -1,6 +1,11 @@
-url: https://mmt.me.uk/
-description: Mischa's Tuffield personal website and blog
+title: Mischa Tuffield
 author: Mischa Tuffield
+email: web@mmt.me.uk
+url: https://mmt.me.uk/
+description: Dad, Technology, Atheist, Happy...
+
+favicon: "favicon.ico"
+
 twitter:
   username: mischat
   card: summary 
@@ -12,11 +17,24 @@ social:
     - https://www.linkedin.com/in/mischat
     - https://github.com/mischat
     - https://keybase.io/mischat
-paginate: 5
-paginate_path: "/blog/page/:num/"
+#paginate: 5
+#paginate_path: "/blog/page/:num/"
+
+permalink: /blog/:year/:month/:day/:title/
+
+theme: no-style-please
+
+theme_config:
+  appearance: "dark" # can be "light", "dark" or "auto"
+  back_home_text: "../home" # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+
+sass:
+  style: :compressed  
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
 

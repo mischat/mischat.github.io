@@ -1,7 +1,21 @@
 ---
-layout: default
+layout: post 
 title: About
 ---
-# About page
+[I](https://uk.linkedin.com/in/mischat/) am currently the Founding CTO of [Monolith](https://monolith.xyz/) (previously known as TokenCard), an Ethereum Project on a mission to disrupt consumer banking. We are building the world’s first truly decentralised consumer banking platform; bringing decentralisation to the masses. We believe that we can provide users with a user experience akin to a consumer bank, in an equitable manner, with one core difference, our users never need relinquish control of their assets.
 
-This page tells you a little bit about me.
+Before that I was CTO of [Antidote](https://antidote.me/), a digital health company on a mission. The company was focused on accelerating the breakthrough of new treatments by bridging the gap between medical research and the people who need them via Clinical Trial recruitment. At Antidote I teamed up with [Pablo Gravier](https://uk.linkedin.com/in/pablograiver), [Eze Vidra](https://twitter.com/ediggs), [Keith Lovell](https://www.linkedin.com/in/keith-lovell-2ab869), ([amongst others](https://antidote.me/about-us/team/)) to help revolutionise medical research.
+
+Previous to that, I was CTO at [State](https://state.com/) where I sat on the executive team defining strategic direction whilst overseeing technology and product development. [State](http://state.com/) is an intelligent opinion network that makes use of cutting edge technologies to organise the world’s opinions. At State I teamed up with [Alex Asseily](https://www.linkedin.com/pub/alexander-asseily/94/a49/305), founder of [Jawbone](https://jawbone.com/), [Nick Jacobi](https://www.linkedin.com/in/nick-jakobi-4b5569/), [Alex Nako](https://www.linkedin.com/in/alexnako/) and [Sir Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) to create one of the most powerful and innovative Semantic platforms by fusing a rich Topic Graph with powerful Natural Language Processing techniques to power the world's first Opinion Network.
+
+I have been active in the London technology and startup scene since 2008; I spent three and a half years helping to see [Garlik](http://www.garlik.com/) exit to Experian. At Garlik I was lucky enough to work with some amazing people including but not limited to [Tom Ilube](https://en.wikipedia.org/wiki/Tom_Ilube), [Mike Harris](https://en.wikipedia.org/wiki/Mike_Harris_(entrepreneur)), [Steve Harris](https://www.linkedin.com/in/swharris/), and [Sir Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/), to name a few.
+
+After leaving Garlik I moved on to head up research engineering at [PeerIndex](http://www.peerindex.com/) working for [Azeem Azhar](https://twitter.com/azeem), before ultimately becoming CTO there. As CTO of PeerIndex I led the design and development of a world leading big data platform that processed 10% of the Twitter firehose in real-time identifying influencers on Twitter. PeerIndex exited to [Brandwatch in 2014](https://www.brandwatch.com/p/peerindex-and-brandwatch/).
+
+I hold a [PhD](/docs/tuffield_2010.pdf) from the [University of Southampton](http://www.ecs.soton.ac.uk/) supervised by [Professor Sir Nigel Shadbolt (Principal of Jesus College, Oxford)](https://en.wikipedia.org/wiki/Nigel_Shadbolt), and an AI degree from [Edinburgh University](http://www.ed.ac.uk/informatics/). I used to be an active member of the Semantic Web research community and have [participated on Programme Committees for the top international conferences](https://mmt.me.uk/about#programme) in my fields of interest.
+
+As someone passionate about the future of an open, decentralised, and privacy aware web. I have had the pleasure of working with [Sir Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) in two of the five startups I have been involved in and used to be an active member of the [World Wide Web Consortium (W3C)](https://www.w3.org/). The W3C is an international community that develops open standards to ensure the long-term growth of the Web. I have contributed to the long term future of the web by participating in the [W3C’s RDF Working Group](https://www.w3.org/2011/rdf-wg/wiki/Main_Page) in the design of the [Turtle specification](https://www.w3.org/TR/turtle/), and co-edited the [W3C’s Social Web XG's Report entitled: "A Standards-based, Open and Privacy-aware Social Web"](https://www.w3.org/2005/Incubator/socialweb/XGR-socialweb-20101206/).
+
+Finally, I am privacy adovacate and am the reason why there is no social tracking on NHS direct and on the BBC website.
+
+If you are machine you may want to have a look at [my FOAF profile](https://mmt.me.uk/foaf.rdf#mischa) and you can also find [my PGP key](https://mmt.me.uk/mischa.pubkey.asc) if you are that way inclined. I occasionally work on some side projects that can be found on [my github account](https://github.com/mischat).
