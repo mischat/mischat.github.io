@@ -26,6 +26,8 @@ entries:
             url: https://keybase.io/mischat
           - title: flickr
             url: https://www.flickr.com/photos/mischatuffield/
+      - title: foaf
+        url: foaf.rdf
 
   - title: blog
     post_list: true
