@@ -2,26 +2,30 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: info 
+  - title: me
     url: false
     entries:
-      - title: about me 
+      - title: about
         url: about
-      - title: CV
+      - title: cv
         url: cv
       - title: slides and talks
         url: slides
-
-  - title: another list
-    url: false
-    entries:
-      - title: with subitems
+      - title: online 
         url: false
         entries:
-          - title: with subsubitems
-            url: false
-          - title: example page
-            url: about
+          - title: twitter
+            url: https://twitter.com/mischat
+          - title: facebook
+            url: https://www.facebook.com/mischat
+          - title: linkedin
+            url: https://www.linkedin.com/in/mischat
+          - title: github
+            url: https://github.com/mischat
+          - title: keybase
+            url: https://keybase.io/mischat
+          - title: flickr
+            url: https://www.flickr.com/photos/mischatuffield/
 
   - title: blog
     post_list: true
