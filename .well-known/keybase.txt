@@ -1,0 +1,83 @@
+==================================================================
+https://keybase.io/mischat
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mmt.me.uk
+  * I am mischat (https://keybase.io/mischat) on keybase.
+  * I have a public key with fingerprint 18A2 AF28 0CA5 9E77 AE51  2BB3 9ED0 B04E 51F2 F7EF
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "18a2af280ca59e77ae512bb39ed0b04e51f2f7ef",
+            "host": "keybase.io",
+            "key_id": "9ED0B04E51F2F7EF",
+            "uid": "5d445ec9177a98a1a7e0f26540d6f600",
+            "username": "mischat"
+        },
+        "merkle_root": {
+            "ctime": 1420197557,
+            "hash": "3ad8457ab4f16600c1e5bf2ad726db2822eaaee947ec6214fce62424a55fbf7b8ea860b75a84db269dbc2b5da0361f3d74b1bd0d94f7f00f4a2bcc22980f0d9e",
+            "seqno": 120440
+        },
+        "service": {
+            "hostname": "mmt.me.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1420197676,
+    "expire_in": 157680000,
+    "prev": "c76af8afcb38e93373fedb5c3b66c7dfe4ad67498ec40e7b88aca871e86c5660",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - http://gpgtools.org
+
+owFVkntMFFcUxpeHUrBaAo3WiC0ds6ZSsszMzhNCqoZFqVZC0vKqZLkzc+8ysg+c
+XR4rrypUUCHVIhJMAeWlIFBIxbbaGCtBTbHyMFW2JW1AAUma0oKNRWjTGaJpnb/m
+nvud3/2+c+/x1T46b6/6oe49CXNPZr0GZgTd+63F4fmY4JDcWGQ+JlplaHdpf3Zg
+g1gklgndAnBCg+wItTskaNjnDH2mCcdyoOKUHXZVhRtYgxErDNfkWjOS7RaoZCmy
+xsIIDpAAkRwuApqHLAsgTZCCYOShhAs4pa4QiViIVGSGw+l64VRsmWmWJbXKm2Lw
+7ThloolYMpY1xap72csbtERRNBR5QmXzHCAAC3FEMjSFSwxicFwTOqHyLJJNdooZ
+wKXZtUEl0wrNisOxnFl0yZqCoEic4FmaZlVDwJmh9hiBxFE0CwQKEYxKFAlIC4gE
+EksykkByJAkBgJCnWCgyJEEhETIkRVKAppGAWIGDgGNwgaUBR6l6hpcEkRRoCeBG
+hkBGiaUEQpBwiacQi3AcUYAURJEkeQ5HahWqCZxwv92hmiNxisILtbWSI4tQ861N
+7Xk4m8tgg4bsTLUjS3G4HKLDqpYzXK6sSC2xy52lyXKhYNYAbSrBLMh2Sb2w/98o
+oUpfnAbDMuEYzMuSFWiWNQXNMhyufto5MEdliiwDEAeQKBg5yBuNrBFBSaBFo8Aw
+IishSAGJYSmegyKFQ3UmHBABxxKQY0RaHep/GSnVJ7CoSKdssQNXtgKxwiPeIb46
+L2/dyhXe2pPVBfgHPn/HaTcCdYds9NHKK+3Gt5M2+fG7mKhvGjs26Fum9Ac89ZnW
+9B2LYT+Z9nkODRR0la6tPnM7Ian8E8Uy+fHe0R9q0JfefMu9hL2/lU4UVUY1d9Y/
+jmhe3ChdawplbPMXOzo2POVi5KnF3Nlksds8ePsSO2tcSF23cn2rJe3Yyz8f2zxd
+dn+2+Hd3TzW/dXNQebuX7Q9r3VhV5+krAykNfeu70GVL3sGrsz3fTroTvrtwMzrM
+tDYonijf/Sua7cPafvHrvIvlNz7wnJqbfhAXfO1r8Ia++yvDmf44sKN3S/NL24Jq
+Fs4VJKZ7WoMHL3U9LC6uKgze9elMwKNp39NjJZny0f0Z/qf6vuhYc7+1ejTCC1Wv
+stXHmiLHe00D5/IFs19VbvvWz69v01VEnS2aufdu6dnj0viaScuPR15xbdoRXWsZ
+KiyRovVT5+eS+Yq34u60xy7WJ8UuOZ/2VywV7VyKaOg9z01F3LJiq7Y81PsE1v1J
+KEWTry0mD3rC0x+3JZTlT92dO7AnfnVLwF+eFR/Ufpg0XnfrPSrjzRsxw/p3/v5+
+JK/EHlrmCms4/GpuYhM+0aJsTx9bt1TQt3ECnkgJ1ne7hytqqrM/8qktvjDoPDjT
+ox8ZSRswz+ubCutS/0mumu8/nHj5euUod/JECNf45OTVFP3ueDH1dcmfuzgU0j78
+qAxE+d5ZMN+M+uxf
+=g2bG
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mischat
+
+==================================================================
