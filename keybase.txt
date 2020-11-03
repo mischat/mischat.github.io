@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mischat
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mmt.me.uk
+  * I am mischat (https://keybase.io/mischat) on keybase.
+  * I have a public key ASCZTKmi0LrHcRTCG5dnpanVE0ur6F7xnrkUIRYmvufreQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101bde1320ae1b3f5f4f6b95b47db3692d8d6e6680ae858721df495f715b80dcc3d0a",
+      "host": "keybase.io",
+      "kid": "0120994ca9a2d0bac77114c21b9767a5a9d5134babe85ef19eb914211626bee7eb790a",
+      "uid": "5d445ec9177a98a1a7e0f26540d6f600",
+      "username": "mischat"
+    },
+    "merkle_root": {
+      "ctime": 1604444731,
+      "hash": "db16e516e027399df0783c4d89f90c3f94eec8af38f79cc3475e0d9c6e823e59a240153584043e6572a7a19ec2829fec6310d363a6d882337c3e3790b06b09a3",
+      "hash_meta": "32d74b46ea3ddb13d41a430546070ded5a58f6697cea2752905f477b575bb46c",
+      "seqno": 18011333
+    },
+    "service": {
+      "entropy": "PqHau7QYZ0qkuhSeKC6JLCA/",
+      "hostname": "mmt.me.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1604444781,
+  "expire_in": 504576000,
+  "prev": "5df8d78154b9bc99ac47571ee4feeb5be7aa617cca879724b75741d06ce6710c",
+  "seqno": 99,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgmUypotC6x3EUwhuXZ6Wp1RNLq+he8Z65FCEWJr7n63kKp3BheWxvYWTESpcCY8QgXfjXgVS5vJmsR1ce5P7rW+eqYXzKh5ckt1dB0GzmcQzEIKewVi2me8SI3DItTIo1v+H0QFlAWZF5W+hPskWXL7dIAgHCo3NpZ8RAEO0E15g5QHDrHgKR+WUmsdQtbhOgQq4wPSCrFRFtRRAobn3TVjnbBsRnz1TfjkviLPK3sZ1lQLZ8SgfQYpGWA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFk94tKVH+DKCUKrByEI3pANkbZNFmAJvdxUoqLHaEZso3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mischat
+
+==================================================================
