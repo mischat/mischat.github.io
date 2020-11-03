@@ -1,0 +1,777 @@
+../barcamp09/<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head> 
+  <title>Title: Telling Your Story: Autobiographical Metadata and the Semantic Web</title>
+  <meta name="copyright" content="http://creativecommons.org/licenses/by/3.0/"/>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/slidy.css" /> 
+  <script src="../Tools/Slidy/slidy.js" charset="utf-8" type="text/javascript"></script> 
+   <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/mmt-black.css" /> 
+</head>
+<body>
+<!-- Background -->
+<div class="background"> 
+ <a href="http://mmt.me.uk/"><img id="head-icon" alt="mmt.me.uk Logo" src="../../images/WiltedButtercup-small.png"/></a>
+</div> 
+
+<!-- Cover Page-->
+<div class="slide cover">
+ <a href="http://www.ecs.soton.ac.uk/">
+  <img src="http://www.ecs.soton.ac.uk/Resources/SiteImages/ecs_logo.gif" alt="ECS Logo" class="cover" />
+ </a>
+ <h1>Title: Telling Your Story: Autobiographical Metadata and the Semantic Web</h1>
+ <p><a href="http://mmt.me.uk/foaf.rdf#mischa">Mischa Tuffield</a></p>
+ <p><a href="http://www.iam.ecs.soton.ac.uk/">IAM Group</a></p>
+ <p><a href="mailto:mischa@mmt.me.uk">mischa@mmt.me.uk</a></p>
+ <br/> 
+ <p>Slides can be found online <a href="http://mmt.me.uk/slides/iam121009/index.html">http://mmt.me.uk/slides/iam121009/index.html</a></p>
+</div>
+
+<div class="slide">
+ <h1>Your Digital Persona</h1>
+  <ul>
+   <li><a href="http://en.wikipedia.org/wiki/Digital_traces">Digital trails/Digital traces/Digital Footprints</a></li>
+   <li>Your identity online</li>
+   <li>You need to control this, for people can assume information about you, you should be the authority on your own data</li>
+   <li>This is what I call your lifelog, or your "Digital Persona"</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Capturing your Digital Persona at Source : Lifelogging</h1>
+  <ul>
+   <li>More and more transaction/social interactions are happening online</li>
+   <li>This has been labelled <a href="http://eprints.ecs.soton.ac.uk/17123/">'The Disappearence of the Body'</a></li>
+   <li>Our daily lives leave behind more evidence that we can collect and curate, and the indiscriminating collection of such evidence is what has been coined Lifelogging</li>
+   <li>Lifelogging can either be :
+     <ul>
+      <li>Passive : storing by-productsof the life one would have lived anyways</li>
+      <li>Active : one surrounds oneself with sensors and information capture tools to create as rich a picture of one’s life as possible.
+     </ul>
+   </li>
+  </ul> 
+</div>
+
+<div class="slide">
+ <h1>Passive Lifelogging</h1>
+  <ul>
+   <li><img src="images/sqoaf.png" alt="Sqoaf, Squirrel FOAF" /></li>
+   <li>An example could be our very own <a href="http://semantic-squirrel.org/">Semantic Squirrels Group</a></li>
+   <li>The identification of sources of “cheaply available” autobiographical information</li>
+   <li>Surreptitious capture of autobiographical data</li>
+   <li>Ethos: Storing information in its raw form, for future utility.</li>
+   <li>Sources of information identified: 
+    <ul>
+     <li>Calendar: iCal</li>
+     <li>Location information: GPS, Network Gazetteer</li>
+     <li>File System Information: PDFs, Documents</li>
+     <li>Web History information: Firefox</li>
+     <li>Email Information: Mbox </li>
+     <li>Media Playlist Information: Music</li>
+     <li>Contextual Info: Weather and News metadata</li>
+    </ul>
+   </li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Active Lifelogging : MyLifeBits (1)</h1>
+  <ul>
+   <li><a href="http://research.microsoft.com/en-us/projects/mylifebits/">MyLifeBits: M$R's personal database for everything</a></li>
+   <li>Gordon Bell's baby, well Gordon and his many assistants...</li>
+   <li>The <a href="http://en.wikipedia.org/wiki/Microsoft_SenseCam">SenseCam device</a></li>
+   <li><img src="images/gordonbell.jpg" alt="Gordon's Bell" /></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Active Lifelogging : MyLifeBits (2)</h1>
+  <ul>
+   <li><img src="images/MLB-timeline-text 11-14-2003.jpg" width="80%" alt="MyLifeBits Timeline" /></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Active Lifelogging : MyLifeBits (3)</h1>
+  <ul>
+   <li><img src="images/MapGalapogos.jpg" width="70%"  alt="Galapagos Holidays MyLifeBits" /></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Active Lifelogging : MyLifeBits (3)</h1>
+  <ul>
+   <li><img src="images/BellBySize03-2005.jpg" width="70%"  alt="Bell by size" /></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Others active in this space</h1>
+  <ul>
+   <li><a href="http://www.computing.dcu.ie/~asmeaton/">Alan Smeaton's</a> <a href="http://www.cdvp.dcu.ie/">Group Dublin City</a></li>
+   <li><a href="http://web.archive.org/web/20030603173339/http%3a//www.darpa.mil/ipto/Solicitations/PIP_03-30.html">The Lifelog project from DARPA</a>, killed off by human right's enthusiasts</li>
+   <li><a href="http://www.sigmm.org/Members/jgemmell/CARPE">CARPE Workshops at ACM Multimedia</a></li>
+   <li><a href="http://totalrecallbook.com/">Total Recall</a> book out now</li>
+   <li><a href="http://www.memoriesforlife.org/">The Memories for Life Network</a></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Lifelogging &amp; Empowerment (1)</h1>
+  <ul>
+   <li>Don't trust people to store your data on your behalf</li>
+   <li>Capture your own context and your own content</li>
+   <li>Store your own data, give yourself a <a href="http://esw.w3.org/topic/WebID">WebID</a>, and use that as the subject whenever you want to create data about yourself</li>
+   <li><a href="http://www.garlik.com/press.php?id=368-GRLK_PRD">Garlik FOI request report</a></li>
+   <li>Store your own data and use pushback technology like mhausenblas's RDF -&gt; API <a href="http://code.google.com/p/pushback/">RDF Pushback work</a></li>
+   <li><a href="http://eprints.ecs.soton.ac.uk/17123/">Lifelogging: Privacy and Empowerment with Memories for Life</a></li>
+   <li>Rutgers Uni., Hasan Elahi, who was arrested in 
+   2002 on serious terrorism allegations despite being absolutely innocent of any 
+   criminal or terrorist activity, has taken to lifelogging and posting the information on 
+   the Web as a pre-emptive alibi, see: <a href="http://trackingtransience.net/">http://trackingtransience.net/</a></li>
+   <li><a href="http://blog.lib.umn.edu/swiss/archive/Jimroglou.pdf">JenniCam : A camera with a view</a> the experiment was meant to enpower women ...</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Lifelogging &amp; Empowerment (2)</h1>
+  <ul>
+   <li>Check out your online persona: at <a href="http://personas.media.mit.edu/">MIT's Personas</a></li>
+   <li>It is a shame that they can get it <a href="http://mmt.me.uk/blog/2009/08/25/personas-mit/">really wrong</a></li>
+   <li><img src="images/MIT_Personas_240809.png" width="95%" alt="Mischa's online persona" /></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>So how does Personal Information fit in with the Semantic Web</h1>
+ <ul>
+  <li>Associative Querying</li>
+  <li>My favourite <a href="http://www.w3.org/People/Berners-Lee/card#i">TimBL</a> picture :</li>
+  <li><a href="http://dig.csail.mit.edu/2008/Talks/1112-WSRICouncil-lk/images/SemWebAppMetro.png"><img src="../barcamp09/images/SemWebAppMetro.png" width="50%" alt="TimBL metro"/></a></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>The Semantic Web Layercake</h1>
+ <ul>
+  <li><img src="../barcamp09/images/sw-layercake.png" alt="The new Semantic Web Layer Cake" /></li>
+ </ul> 
+</div>
+
+<div class="slide">
+ <h1>The new Semantic Web Layercake!?</h1>
+ <ul>
+  <li><img src="../barcamp09/images/semantic-web-layer-cake.png" alt="The new Semantic Web Layer Cake" /></li>
+ </ul> 
+</div>
+
+<div class="slide">
+<h1>Semantic Web / The Web of Data 1/2</h1>
+  <ul>
+  <li><a href="http://www.w3.org/RDF/">The Resource Description Framework</a> (RDF) -triples. 
+  MIME-types:
+  	<ul>
+  	 <li> n3 <strong>text/rdf+n3</strong> </li>
+  	 <li> ntriples <strong>text/plain</strong> </li>
+  	 <li> turtle <strong>application/x-turtle</strong> </li>
+	 <li> RDF-XML <strong>application/rdf+xml</strong> </li>
+	</ul>
+   </li>
+  <li>Shared Conceptualisations/domain models/ontologies
+  	<ul>
+  	 <li>A Cat is_a Mammal, Mammals give birth, ...</li>
+  	 <li>Person is an Agent, Agents interact with their environment, A Person can have friends, A person has an age of type integer, with a cardinality of > 0 </li>
+  	</ul>
+  </li>
+ </ul> 	
+</div>
+
+<div class="slide">
+<h1>Semantic Web / The Web of Data 2/2</h1>
+  <p>Uniform Resource Identifiers (URI)</p>
+  <p>Who knows what a <a href="http://www.w3.org/Addressing/">URI</a> is?</p>
+  <ul class="incremental">
+  <li>A URI is a compact <strong>sequence of characters</strong> that <strong>identifies</strong> an abstract concept
+  or a physical resource - RFC3986</li>
+  <li>foo://bar.com:8001/boo/x?something=value#fragment</li>
+  <li>\___/\___________/\____/ \_____________/ \______/</li>
+  <li>scheme   authority  path       query      fragment</li>
+  <li>URIs are NOT merely URLs!</li>
+  <li>And I should stress that <a href="http://www.w3.org/Provider/Style/URI">cool ones don't change</a>
+  <ul>
+   <li><strong>http://</strong></li>
+   <li><strong>mailto:</strong></li>
+   <li><strong>tag:</strong></li>
+   <li><strong>file://</strong></li>
+   <li><strong>isbn:</strong></li>
+   <li><strong>urn://</strong></li>
+   <li><strong>...</strong></li>
+  </ul></li>
+ </ul> 	
+</div>
+
+<div class="slide">
+<h1>RDF isn't that bad ...</h1>
+
+<ul>
+ <li>RDF is not simply a flavour of XML, but it can be serialised in XML, but it is very ugly
+ <pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"&gt;
+ &lt;foaf:PersonalProfileDocument rdf:about=""&gt;
+	&lt;foaf:primaryTopic rdf:resource="http://mmt.me.uk/foaf.rdf#mischa"/&gt;
+ &lt;/foaf:PersonalProfileDocument&gt;
+
+ &lt;foaf:Person rdf:ID="mischa"&gt;
+	&lt;foaf:homepage rdf:resource="http://mmt.me.uk/"/&gt;
+ &lt;/foaf:Person&gt;
+&lt;/rdf:RDF&gt;
+ </pre></li>
+ <li> It can be serialised in other ways to make it easier to read ... 
+ <pre>
+ @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+ @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+  &lt;&gt; a foaf:PersonalProfileDocument ;
+  	 foaf:primaryTopic &lt;#mischa&gt; .
+  &lt;#mischa&gt; a foaf:Person ;
+	foaf:homepage &lt;http://mmt.me.uk/&gt; .
+ </pre>
+</li>
+ <li> It can even more verbose: 
+  <pre>
+    &lt;http://mmt.me.uk/foaf.rdf&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://xmlns.com/foaf/0.1/PersonalProfileDocument&gt; .
+    &lt;http://mmt.me.uk/foaf.rdf&gt; &lt;http://xmlns.com/foaf/0.1/primaryTopic&gt; &lt;http://mmt.me.uk/foaf.rdf#mischa&gt; .
+    &lt;http://mmt.me.uk/foaf.rdf#mischa&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://xmlns.com/foaf/0.1/Person&gt; .
+    &lt;http://mmt.me.uk/foaf.rdf#mischa&gt; &lt;http://xmlns.com/foaf/0.1/homepage&gt; &lt;http://mmt.me.uk/&gt; .
+  </pre></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>So what does all of this mean?</h1>
+ <ul>
+  <li>Represent your data in triples, use unique identifiers, and make use of as many shared conceptualisations as you can</li>
+  <li>So what are triples?: <strong>Subject Predicate Object</strong></li>
+  <li>Implied semantics in column name in a class db</li>
+  <li>And this is very similar in form to the simplest of English sentences</li>
+  <li><em>some guy called X has a homepage X</em></li>
+  <li><pre> &lt;#personX&gt; foaf:homepage &lt;http://foo.com/bar&gt; .</pre></li> 
+  <li>Need to be able to bung any Class/property URI into a web browser to get its description</li>
+ </ul> 
+</div>
+
+<div class="slide">
+ <h1>Content Negotiation</h1>
+ <ul>
+  <li>Show /Music example on the BBC
+   <ul>
+    <li><pre>curl -I http://www.bbc.co.uk/music/artists/cc197bad-dc9c-440d-a5b5-d52ba2e14234</pre> Return "text/html"</li>
+    <li><pre>curl -I -H "Accept: application/rdf+xml" http://www.bbc.co.uk/music/artists/cc197bad-dc9c-440d-a5b5-d52ba2e14234</pre> Return "application/rdf+xml"</li>
+    </ul></li>
+   <li><a href="http://blog.dbtune.org/post/2009/03/24/A-sneak-peek-at-the-BBC-Music-RDF">http://blog.dbtune.org/post/2009/03/24/A-sneak-peek-at-the-BBC-Music-RDF</a> via Yves Raimond</li>
+  <li>I generate my homepage from my FOAF file, I just edit it in the <a href="http://foafbuilder.qdos.com/">foaf builder</a> thing and I 
+  write back via <a href="http://mmt.me.uk/blog/2009/03/19/webdav_webid/">webdav</a>, and to OAuth (for private data)</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Knowledge Representation and shared conceptualisations</h1>
+  <ul>
+   <li><a href="http://en.wikipedia.org/wiki/AI_winter">AI winter</a></li>
+   <li><a href="http://www.cyc.com/">CYC project</a></li>
+   <li><a href="http://en.wikipedia.org/wiki/">Wikipedia</a> ... <a href="http://dbpedia.org/">DBpedia</a> the consensus vote ...</li>
+   <li>Could this be leading us to a <em>Universal Vocabulary</em>?</li>
+  </ul>
+ </div> 
+
+<div class="slide">
+ <h1>The Picture 2 Years ago ...</h1>
+ <a href="http://homepages.cwi.nl/~troncy/Talks/2009-03-06-mozcamp/lod-datasets_2007-05.png"><img width="50%" src="../barcamp09/images/lod-datasets_2007-05.png" alt="LOD as of 2007"/></a>
+</div>
+
+<div class="slide">
+ <h1>The Picture as of last year ...</h1>
+ <p>
+ <a href="http://richard.cyganiak.de/2007/10/lod/"><img src="../barcamp09/images/lod-datasets_2008-03-31.png" width="50%" alt="LOD as of 2008"/></a>
+ </p>
+</div>
+
+<div class="slide">
+ <h1>The Picture Now</h1> 
+ <a href="http://richard.cyganiak.de/2007/10/lod/"><img src="images/lod-datasets_2009-07-14.png" alt="lod cloud"/></a>
+</div>
+
+<div class="slide">
+ <h1>Ontomedia Ontology (1)</h1> 
+ <ul>
+  <li><a href="http://purl.org/ontomedia/core/media">http://purl.org/ontomedia/core/media</a></li>
+  <li>Build an ontology for describing stories</li>
+  <li><img src="images/Event.png" alt="Event"/></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Ontomedia Ontology (2)</h1> 
+ <ul>
+  <li><a href="http://contextus.net/">http://contextus.net/</a></li>
+  <li>Build an ontology for describing stories</li>
+  <li><img src="images/Entity.png" alt="Entity"/></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Yves' Event Ontology</h1> 
+ <ul>
+  <li><a href="http://motools.sourceforge.net/event/event.html">http://motools.sourceforge.net/event/event.html</a></li>
+  <li>An ontology for describing events</li>
+  <li><img src="images/yvesevent.png" alt="Entity"/></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Sources of Information where people are leaving their digital trails' anyway...</h1>
+  <ul>
+   <li>Mbox/Messaging</li>
+   <li>Music</li>
+   <li>WebBrowsing</li>
+   <li>Geolocation (IP gazetteers e.g. skyhock)</li>
+   <li>Social Network Info (FOAF - must most likely facebook, twitter, myspace, ...)</li>
+   <li>Nepomuk SemanticDesktop in KDE 4.0 File Reading preferences</li>
+   <li>Radio/BBC Programmes style data</li>
+   <li>Blog Info</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Augmenting context with external datasources</h1>
+  <ul>
+   <li>Human memory, associative linking in memory</li>
+   <li>Lateral thinking</li>
+   <li>Context could include:
+    <ul>
+     <li>Weather Info</li>
+     <li>Day/Night Info</li>
+     <li>Indoor/Outdoors Info</li>
+     <li>News Info</li>
+     <li>Traffic Info/on one's route to work...</li>
+    </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Augmenting context with content 1</h1>
+  <ul>
+   <li>User generated content such as : pictures, videos, podcasts ... could give us further metadata</li>
+   <li>Face detection Hue, Intensity, Texture (HIT) map Enhancement: Eigen-Faces Algorithm</li>
+  <li><img src="../barcamp09/images/photo2.png" width="50%" alt="Face detection"/></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Augmenting context with content 2</h1>
+  <ul>
+   <li>User generated content such as : pictures, videos, podcasts ... could give us further metadata</li>
+   <li>Natural/Artificial -- City/Landscape</li>
+  <li><img src="../barcamp09/images/photo1.png" width="50%" alt="City/Landscape"/></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Augmenting context with content 3</h1>
+  <ul>
+   <li>Focus Map Info, which part of the image is the main focal point?</li>
+  <li><img src="../barcamp09/images/photo3.png" width="50%" alt="Focus Map"/></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1><a href="http://infolab.stanford.edu/~mor/">Mor Namaan</a>, <a href="http://zonetag.research.yahoo.com/">ZoneTag</a> 1</h1>
+  <ul>
+  <li>How well remembered...</li>
+  <li><img src="../barcamp09/images/Mor1.png" width="50%" alt="How well remembered"/></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1><a href="http://infolab.stanford.edu/~mor/">Mor Namaan</a>, <a href="http://zonetag.research.yahoo.com/">ZoneTag</a> 2</h1>
+  <ul>
+  <li>How useful ...</li>
+  <li><img src="../barcamp09/images/Mor2.png" width="50%" alt="How Useful"/></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>How would you do this?</h1>
+  <ul>
+   <li>FOAF : Documents on the web describing people and how their friends are</li>
+   <li>Public / Private : via <a href="http://oauth.net/">OAuth</a> / <a href="http://blogs.sun.com/bblfish/entry/foaf_ssl_creating_a_global">FOAF+SSL</a></li> 
+   <li>An index of FOAF files, to give you links in, otherwise you would only have links out ....</li>
+   <li>Associate the Contextual Information, with the Content, that it to your WebID/FOAF Person via RDF</li>
+   <li>Using Event Ontology, geoLocation Ontology, soic ontology, and so on ...</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>In order to</h1>
+  <ul>
+   <li>Not have to learn yet another API</li>
+   <li>Have a decentralised social network, where people get control over their own data</li>
+   <li>And they can always pushback data to today's "in" social network at a given time</li>
+   <li>Creation of autobiographical metadata, a legacy, a definitive collection of facts regarding a human</li>
+   <li>Unified Language to tasks easier :
+    <ul>
+     <li>integration/smushing/mashing up</li>
+     <li>distributed query</li>
+     <li>content generation</li>
+    </ul></li>
+  </ul>
+</div>
+
+<!-- FOAF -->
+<div class="slide">
+ <h1>FOAF : The Friend-Of-A-Friend Ontology</h1>
+ <ul>
+  <li><i>'The Friend of a Friend (FOAF) project began early in 2000 as an "experimental linked information project", created by <a href="http://danbri.org/foaf.rdf#danbri">Dan Brickley</a> and <a href="http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf">Libby Miller</a>.'</i></li>
+  <li>RDF : <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></li>
+  <li>HTML : <a href="http://www.foaf-project.org/">http://www.foaf-project.org/</a></li>
+  <li>FOAF makes it possible for people to build large scale, decentralised, open social networks that are controlled by individual users.</li>
+  <li>Sites such as : <i>LiveJournal, hi5, vox, friendfeed?, google???,...</i></li>
+  <li>Reflectors : <i> twitter, flickr, lastfm, delicious, ... </i></li>
+ </ul>
+ <p><a href="http://www.foaf-project.org/"><img src="images/SmileysTransp.gif" alt="foaf logo"/></a></p>
+</div>
+
+<!-- Blob -->
+<div class="slide">
+ <h1>The FOAF Landscape as per Q1 2009</h1>
+ <p><img src="images/foaf-blob.png" alt="Foaf blob"/></p>
+</div>
+
+<!--The slides-->
+<div class="slide">
+ <h1>Overview (a Steve-ism)</h1>
+ <map name="GraffleExport" id="graffleExport">
+  <area shape="rect" coords="96,55,246,155" href="http://foaf.qdos.com/validator/" alt="box validator"/>
+  <area shape="rect" coords="38,343,188,443" href="http://foaf.qdos.com/verify-demo" alt="box verify-demo"/>
+  <area shape="rect" coords="124,488,274,588" href="http://foaf.qdos.com/reverse" alt="box reverse"/>
+  <area shape="rect" coords="352,498,502,598" href="http://foaf.qdos.com/forward" alt="box forwardt"/>
+  <area shape="rect" coords="38,199,188,299" href="http://foaf.qdos.com/sameas" alt="box sameas"/>
+  <area shape="rect" coords="546,199,696,299" href="http://private.qdos.com/" alt="box private"/>
+  <area shape="rect" coords="299,27,449,127" href="http://foaf.qdos.com/find/?q=http%3A%2F%2Fmmt.me.uk%2Fblog%2F" alt="box viewer"/>
+  <area shape="rect" coords="503,55,653,155" href="http://foafbuilder.qdos.com/" alt="box foafbuilder"/>
+  <area shape="rect" coords="299,282,449,382" href="http://4store.org/" alt="box 4store"/>
+  <area shape="rect" coords="428,357,578,457" href="http://4store.org/" alt="box 4store"/>
+ </map>
+ <img style="border:0" src="images/connections.png" usemap="#GraffleExport" alt="overview of foaf.qdos.com"/>
+</div>
+
+<!-- Viewer -->
+<div class="slide">
+ <h1>Viewer (1): <a href="http://foaf.qdos.com/">http://foaf.qdos.com/</a></h1>
+  <ul>
+   <li>HTML view of a FOAF PersonalProfileDocument</li>
+   <li>Includes a list of friends</li>
+   <li>Includes a view of who claims to know the given foaf:Person</li>
+   <li>Caters for searching on FOAF <a href="http://mmt.me.uk/blog/2009/09/07/foaf-ifps/">IFPs</a> (<a href="http://esw.w3.org/topic/InverseFunctionalProperty">what is an IFP?</a>)</li>
+  </ul>
+<!--  <ul class="incremental"> -->
+  <ul>
+   <li><a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/mbox_sha1sum">foaf:mbox_sha1sum</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/jabberID">foaf:jabberID</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">foaf:isPrimaryTopicOf</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/weblog">foaf:weblog</a></li>
+   <li> ... </li>
+ </ul>
+</div>
+
+<!-- Viewer 2 -->
+<div class="slide">
+ <h1>Viewer (2): <a href="http://foaf.qdos.com/find/?q=http://planb.nicecupoftea.org/">http://foaf.qdos.com/find/?q=http://planb.nicecupoftea.org/</a></h1>
+  <a href="http://foaf.qdos.com/find/?q=http://planb.nicecupoftea.org/"><img src="images/libby_viewer.png" width="70%" alt="How Useful"/></a>
+</div>
+
+<!-- Builder 1 -->
+<div class="slide">
+ <h1>Builder (1): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+   <li>RAP</li>
+   <li>AJAR(ish)</li>
+   <li>SPARQL</li>
+   <li>SPARQL-PROTOCOL to 4-store</li>
+   <li>A Foaf Editor which allows you to :
+    <ul>
+     <li>Search for a FOAF file</li>
+     <li>Build and store a FOAF file</li>
+     <li>Edit their own existing FOAF file</li>
+     <li>Manage privacy and permissions</li>
+     <li>Provision of a service that allows people to search and browse millions of FOAF files in a user friendly way</li>
+     <li>Edit / Store Personal Info in both a Public and Private Manner</li>
+    </ul>
+   </li>
+ </ul>
+</div>
+
+<!-- Builder 2 -->
+<div class="slide">
+ <h1>Builder (2): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+  <li>Get your location via GUI</li>
+ </ul>
+  <img src="images/location.png" width="70%" alt="Location Editor"/>
+</div>
+
+<!-- Builder 3 -->
+<div class="slide">
+ <h1>Builder (2): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+  <li>Write to WebDAV, save the file to your machine, ...</li>
+ </ul>
+  <img src="images/writing.png" width="70%" alt="Advanced Writing"/>
+</div>
+
+<!-- Builder 3 -->
+<div class="slide">
+ <h1>Builder (3): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+  <li>Get the RDF out of the FOAF builder</li>
+ </ul>
+  <img src="images/geekview.png" width="70%" alt="Geek View"/>
+</div>
+
+<!--OAuth -->
+<div class="slide">
+ <h1>Private foaf.qdos.com <a href="http://private.qdos.com/">http://private.qdos.com/</a></h1>
+  <ul>
+  <li>Get your own FOAF OAuth endpoint with your OpenID URI</li>
+  <li>Allows for private FOAF data to be stored and retrieved from an OAuth endpoint</li>
+ </ul>
+  <img src="images/private.png" width="70%" alt="Private OAuth"/>
+</div>
+
+<!-- Forward Search -->
+<div class="slide">
+ <h1>Forward Search: <a href="http://foaf.qdos.com/forward/">http://foaf.qdos.com/forward/</a></h1>
+ <ul>
+  <li>Entering a unique identifier for a foaf:Person (i.e. email address, mbox sha1sum, homepage, weblog, or a FOAF URI) will return FOAF RDF listing foaf:Persons which the identifier claims to know.</li>
+  <li>Parameters : <i>path</i> and <i>ifp</i></li>
+  <li>Example 1: <a href="http://foaf.qdos.com/forward?path=http://danbri.org/&amp;ifp">http://foaf.qdos.com/forward?path=http://danbri.org/&amp;ifp</a></li>
+  <li><pre>
+&lt;http://users.ecs.soton.ac.uk/nrs/foaf.rdf#me&gt;
+    a foaf:Person ;
+    foaf:knows [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "965c47c5a70db7407210cef6e4e6f5374a525c5c" ;
+        foaf:name "Tim Berners-Lee"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "26a374ad4de937252c044f7dd45aa48ecbdb4f16" ;
+        foaf:name "Steve Harris"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "28339a9a36ee4e330da9613958efb89e2961c6cb" ;
+        foaf:name "Nick Gibbins"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "ca2d238d1ade1efb7128874e99e84fdef5a3c447" ;
+        foaf:name "Tom Heath"
+    ] .
+</pre></li>
+ <li> Example 2: <a href="http://foaf.qdos.com/forward?path=http://moustaki.org/foaf.rdf%23moustaki">http://foaf.qdos.com/forward?path=http://moustaki.org/foaf.rdf%23moustaki</a></li>
+ </ul>
+</div>
+
+<!-- SameAs Search -->
+<div class="slide">
+ <h1>SameAs Search: <a href="http://foaf.qdos.com/sameas/">http://foaf.qdos.com/sameas/</a></h1>
+ <ul>
+  <li>To get owl:sameAs triples about a given foaf:Person according to their FOAF presence enter their URI,
+email address, mbox sha1sum, homepage or blog URL above and click 'Go'.</li>
+  <li>Entering a unique identifier for a foaf:Person (i.e. email address, mbox sha1sum, homepage, weblog, or a FOAF URI) will return FOAF RDF listing the URIs we think are owl:sameAs.</li>
+  <li>Parameters : <i>path</i> and <i>ifp</i></li>
+  <li>Example 1: <a href="http://foaf.qdos.com/sameas?path=http://danbri.org/&amp;ifp">http://foaf.qdos.com/sameas?path=http://danbri.org/&amp;ifp</a></li>
+  <li><pre>
+&lt;http://danbri.org/foaf.rdf#danbri&gt; a foaf:Person .
+&lt;http://danbri.org/foaf.rdf#danbri&gt; owl:sameAs _:genid1 .
+_:genid1 a foaf:Person .
+_:genid1 foaf:homepage &lt;http://danbri.org/&gt; .
+&lt;http://foafbuilder.qdos.com/people/danbri.org/foaf.rdf#danbri&gt; a foaf:Person .
+&lt;http://foafbuilder.qdos.com/people/danbri.org/foaf.rdf#danbri&gt; owl:sameAs _:genid2 .
+_:genid2 a foaf:Person .
+_:genid2 foaf:homepage &lt;http://danbri.org/&gt; .
+&lt;http://www.advogato.org/person/danbri/foaf.rdf#me&gt; a foaf:Person . 
+&lt;http://www.advogato.org/person/danbri/foaf.rdf#me&gt; owl:sameAs _:genid3 .
+_:genid3 a foaf:Person .
+_:genid3 foaf:homepage &lt;http://danbri.org/&gt; .
+</pre></li>
+ <li> Example 2: <a href="http://foaf.qdos.com/sameas?path=http://plugin.org.uk/swh.xrdf%23me">http://foaf.qdos.com/sameas?path=http://plugin.org.uk/swh.xrdf#me</a></li>
+ <li>Similar in vain to Hugh/Ian's <a href="http://sameas.org/">http://sameas.org/</a></li>
+ </ul>
+</div>
+
+<!-- Reverse Search -->
+<div class="slide">
+ <h1>Reverse Search: <a href="http://foaf.qdos.com/reverse/">http://foaf.qdos.com/reverse/</a></h1>
+ <ul>
+ <li>Entering a unique identifier for a foaf:Person (i.e. one of the IFPs email address, mbox sha1sum, homepage, weblog, or a FOAF URI) will return FOAF RDF listing the people which claim to know the identifier presented.</li>
+  <li>Parameters : <i>path</i> and <i>ifp</i></li>
+  <li>Example 1: <a href="http://foaf.qdos.com/reverse?path=http://danbri.org/&amp;ifp">http://foaf.qdos.com/reverse?path=http://danbri.org/&amp;ifp</a></li>
+  <li> Example 2: <a href="http://foaf.qdos.com/reverse?path=http://tomheath.com/id/me">http://foaf.qdos.com/reverse?path=http://tomheath.com/id/me</a></li>
+ </ul>
+  <pre>
+&lt;http://tomheath.com/id/me&gt; a foaf:Person .
+
+&lt;http://nxg.me.uk/norman&gt;
+    a foaf:Person ;
+    foaf:homepage &lt;http://nxg.me.uk&gt;, &lt;http://www.astro.gla.ac.uk/users/norman/&gt; ;
+    foaf:knows &lt;http://tomheath.com/id/me&gt; ;
+    foaf:mbox_sha1sum "0254b43a4c00a8c5eb9093d9820353640ee02786", "14f2d3a469303d0faca13f73064845ddda4d2dbd", 
+     "58a587e433b1e0c22aa026eeee7703ffcee6262c","bfeee75c2025815392014a95cfd4b6aad117c07f", 
+     "84612b3540a255bb11de3db579e02533ff2631c5", "baa162e14a20b3fafbccbf0fceaa1159a3a042d1",     
+     "c9994fd3713561d0d9a468cd30c11a0f3cb3055a", "e6578555a8108ea83ee7f1d60556e63fd83bcc5e" ;
+    foaf:name "Norman Gray" .
+
+[]
+    a foaf:Person ;
+    foaf:homepage &lt;http://kmi.open.ac.uk/people/mikele&gt; ;
+    foaf:knows &lt;http://tomheath.com/id/me&gt; ;
+    foaf:mbox_sha1sum "97ddc048d1a7df5e6fcb8f530777896a395d3dc1" ;
+    foaf:name "Michele Pasin" .
+
+&lt;http://www.aelius.com/njh#me&gt;
+    a foaf:Person ;
+    foaf:homepage &lt;http://www.aelius.com/njh/&gt; ;
+    foaf:knows &lt;http://tomheath.com/id/me&gt; ;
+    foaf:mbox_sha1sum "3f361af12a473b48852819e3ff9153783149a26a", "a8476e8096db2bde20a734c8446bb3d60befea2b" ;
+    foaf:name "Nicholas J Humfrey" .
+
+</pre>
+
+</div>
+
+<!-- How is this Useful -->
+<div class="slide">
+ <h1>So how is this useful..?</h1> 
+  <ul>
+   <li>Try adding the following triples to your foaf file: </li>
+  </ul>
+   <pre>
+&lt;#me&gt; rdfs:seeAlso &lt;http://foaf.qdos.com/forward?path=http://foo.com/blog&amp;ifp&gt;
+&lt;#me&gt; rdfs:seeAlso &lt;http://foaf.qdos.com/reverse?path=http://foo.com/blog&amp;ifp&gt;
+&lt;#me&gt; rdfs:seeAlso &lt;http://foaf.qdos.com/sameas?path=http://foo.com/blog&amp;ifp&gt;
+   </pre>
+</div>
+
+<!-- Social Verification Info -->
+<div class="slide">
+ <h1>OpenID Social Verifier (1): <a href="http://foaf.qdos.com/verify-about">http://foaf.qdos.com/verify-about</a></h1>
+ <ul>
+   <li>The service is implemented as a RESTful HTTP service.</li>
+   <li>You send requests to the service with an identifier for you and the OpenID you wish to verify.</li>
+   <li>If the OpenID is within 2 people of you then the service returns YES, and the distance between you and them, 0 being an ID for you, and 2 being 2 people away, for example:
+   <pre>
+  &lt;verify&gt;
+  &lt;result degree="2"&gt;YES&lt;result&gt;
+  &lt;verify&gt;
+  </pre></li>
+  <li>The endpoint of the REST service is <a href="http://foaf.qdos.com/verify">http://foaf.qdos.com/verify</a> and the arguments are action, qdosuri, ifp, ifpval and openid.</li>
+  <li><i>action</i> Check or List</li>
+</ul>
+</div>
+
+<!-- Social Verification Demo -->
+<div class="slide">
+ <h1>OpenID Social Verifier (2): <a href="http://foaf.qdos.com/verify-demo">http://foaf.qdos.com/verify-demo</a></h1>
+  <a href="http://foaf.qdos.com/verify?action=list&amp;ifp=foaf%3Ahomepage&amp;ifpval=http%3A//danbri.org/"><img src="images/socialDemo.png" width="70%" alt="How Useful"/></a>
+</div>
+
+<!-- Validator -->
+<div class="slide">
+ <h1>Validator: <a href="http://foaf.qdos.com/validator/">http://foaf.qdos.com/validator/</a></h1>
+ <ul>
+  <li>Checks to whether a RDF document makes correct use of the FOAF ontology</li>
+ </ul>
+ <a href="http://foaf.qdos.com/validator/uri?URI=http%3A%2F%2Fmmt.me.uk%2Ffoaf.rdf&amp;PARSE=Parse+URI%3A+">
+  <img src="images/validator.png" alt="FOAF validator picture"/></a> 
+</div>
+
+<!-- 4store slide -->
+<div class="slide">
+ <h1>4store: <a href="http://4store.org/">http://4store.org/</a></h1>
+ <ul>
+  <li>4store, an efficient, scalable and stable RDF database</li>
+  <li>Steve's baby...</li>
+  <li>Run, both the public and private foaf indexes, on an 8 node cluster</li>
+  <li>Queries to private data limited by Graph URIs</li>
+  <li>For info/help come on <a href="irc://irc.freenode.net/#4store">irc://irc.freenode.net/#4store</a> / visit website</li>
+  <li>For tutorials and future events visit : <a href="http://4store.org/trac/wiki/tutorials">http://4store.org/trac/wiki/tutorials</a> or mail 
+  <a href="mailto:steve.harris@garlik.com">Steve</a></li>
+ </ul>
+ <p><a href="http://4store.org/"><img src="images/4store.png" alt="4store logo"/></a></p>
+</div>
+
+<!-- Future Direction -->
+<div class="slide">
+ <h1>Future Direction</h1>
+ <ul>
+  <li>Full Text Search over FOAF files</li>
+  <li>Grab all of it !</li>
+  <li>Server to Server updates : XMPP <a href="http://svn.foaf-project.org/foaftown/jqbus/intro.html">JQbus</a>?</li>
+  <li>OAuth which Interacts with 4store code to be released</li>
+  <li>Write Data out of FOAF builder to any OAuth</li>
+  <li>More Robust Triangulation option</li>
+  <li>FOAF+SSL for sign-on</li>
+  <li>Continual Update</li>
+  <li>Release code snipbits for people to ping to the FOAF KB <a href="http://foaf.qdos.com/ping">http://foaf.qdos.com/ping</a></li>
+  <li>Release stats on connectivity and richness of FOAF data from different sites</li>
+  <li>Find time and Write a paper :)</li>
+ </ul>
+</div>
+
+<!-- This is final slide -->
+<div class="slide">
+ <h1>Name checks</h1>
+ <h2>Privacy and Internet Stuff</h2>
+ <ul><li>Kieron O'Hara</li>
+ </ul>
+ <h2>Semantic Logger / Photocopain Work</h2>
+ <ul>
+  <li>Antonis Loizou</li>
+  <li>David Dupplaw</li>
+  <li>Steve Harris</li>
+ </ul>
+ <h2>Ontomedia Work</h2>
+ <ul>
+  <li>Mike Jewell</li>
+  <li>Faith Lawrence</li>
+ </ul>
+ <h2>FOAF work</h2>
+ <ul>
+  <li>Nick Lamb</li>
+  <li>Luke Wilson-Mawer</li>
+  <li>Steve Harris</li>
+ </ul>
+ <h2>More linkage</h2>
+ <ul>
+  <li><a href="http://foaf.me/">Foaf.me</a></li>
+  <li><a href="http://esw.w3.org/topic/foaf+ssl">Foaf+SSL</a></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Get involved</h1>
+  <ul>
+   <li>Tracks at WWW conferences (<a href="http://events.linkeddata.org/ldow2009/">Linked Data on the Web 2009</a>) is a good place to start</li>
+   <li><a href="http://iswc.semanticweb.org/">International Semantic Web Conferences</a></li>
+   <li><a href="http://esw.w3.org/topic/FrontPage">ESW wiki</a> at the W3C</li>
+   <li>#swig on irc.freenode.com</li>
+   <li>This talk can be found at this URL <a href="http://mmt.me.uk/slides/iam121009/index.html">http://mmt.me.uk/slides/iam121009/index.html</a></li>
+   <li><strong>Questions ?</strong></li>
+  </ul>
+ </div> 
+
+</body>
+</html>

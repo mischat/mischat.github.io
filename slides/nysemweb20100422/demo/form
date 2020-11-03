@@ -1,0 +1,63 @@
+<?php
+
+require_once 'utils.php';
+
+$domain = 'http://jambi.local';
+$ep = $domain.':6666/data/';
+
+if (isset($_POST['turtle'])) {
+
+	$turtle = $_POST['turtle'];
+
+//	$turtle = escapeshellarg($turtle);
+//	$turtle = preg_replace("/^\'/","",$turtle);
+//	$turtle = preg_replace("/\'$/","",$turtle);
+
+	$turtle = preg_replace("/\\\'/","'",$turtle);
+	$turtle = preg_replace('/\\\"/','"',$turtle);
+	$turtle = preg_replace('/\\r/','',$turtle);
+
+	if (empty($turtle)) {
+		echo "Please submit something ...";
+	}
+
+	$hash = substr(strtr(base64_encode(sha1($turtle, true)), '+/=', '-_,'), 0, 6);
+
+	$uri = $domain."/slides/lod24022010/demo/person/".$hash;
+	echo "The URI created is <a href='$uri'>$uri</a>";
+	echo "<br/>";
+		
+	echo "With HTTP response code: ".sparql_put_string($ep,$uri,$turtle);
+} else {
+?>
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<link rel="alternate" type="application/rss+xml" href="feed.rss"/>
+	<link rel="shortcut icon" href="http://mmt.me.uk/images/favicon.ico" />
+	<title>FOAF PersonalProfileDocument Poster</title>
+	</head>
+	<body>
+	 <h1>Enter a Turtle foaf:PersonalProfileDocument here</h1>
+	 <form method='post' action="">
+<textarea rows="20" cols="120" name="turtle">
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix contact: <http://www.w3.org/2000/10/swap/pim/contact#> . 
+@prefix air: <http://www.daml.org/2001/10/html/airport-ont#> .
+@prefix pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+</textarea>
+	   <br/>
+	   <input type="submit"/>
+	 </form>
+	</body>
+	</html>
+<?php
+}
+?>

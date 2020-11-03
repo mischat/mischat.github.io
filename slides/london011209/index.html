@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+<head> 
+  <title>5 mins on RDF</title>
+  <meta name="copyright" content="http://creativecommons.org/licenses/by/3.0/"/>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print" href="http://mmt.me.uk/slides//Tools/Slidy/slidy.css" /> 
+  <script src="../Tools/Slidy/slidy.js" charset="utf-8" type="text/javascript"></script> 
+   <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/mmt-black.css" /> 
+</head>
+<body>
+<!-- Background -->
+<div class="background"> 
+ <a href="http://mmt.me.uk/"><img id="head-icon" alt="mmt.me.uk Logo" src="../../images/WiltedButtercup-small.png"/></a>
+</div> 
+<!-- Cover Page-->
+<div class="slide cover"> 
+<!-- <img src="../../images/WiltedButtercup.png" alt="Cover page images (keys)" class="cover" /> -->
+ <h1>5 mins on RDF</h1>
+ <p>Name: Mischa Tuffield</p>
+ <p>WebID: <a href="http://mmt.me.uk/foaf.rdf#mischa">http://mmt.me.uk/foaf.rdf#mischa</a></p>
+ <p>mailto: <a href="mailto:mischa.tuffield@garlik.com">mischa.tuffield@garlik.com</a></p> 
+ <p>Work: <a href="http://www.garlik.com">Garlik</a></p>
+</div> 
+
+<!--The slides-->
+
+<div class="slide">
+ <h1>The Semantic Web Layercake</h1>
+ <ul>
+  <li><img src="images/sw-layercake.png" alt="The new Semantic Web Layer Cake" /></li>
+ </ul> 
+</div>
+
+<div class="slide">
+ <h1>The new Semantic Web Layercake!?</h1>
+ <ul>
+  <li><img src="images/semantic-web-layer-cake.png" alt="The new Semantic Web Layer Cake" /></li>
+ </ul> 
+</div>
+
+<div class="slide">
+<h1>Semantic Web / The Web of Data 1/2</h1>
+  <ul>
+  <li><a href="http://www.w3.org/RDF/">The Resource Description Framework</a> (RDF) -triples. 
+  MIME-types:
+  	<ul>
+  	 <li> n3 <strong>text/rdf+n3</strong> </li>
+  	 <li> ntriples <strong>text/plain</strong> </li>
+  	 <li> turtle <strong>application/x-turtle</strong> </li>
+	 <li> RDF-XML <strong>application/rdf+xml</strong> </li>
+	</ul>
+   </li>
+  <li>Shared Conceptualisations/domain models/ontologies
+  	<ul>
+  	 <li>A Cat is_a Mammal, Mammals give birth, ...</li>
+  	 <li>Person is an Agent, Agents interact with their environment, A Person can have friends, A person has an age of type integer, with a cardinality of &gt; 0 </li>
+  	</ul>
+  </li>
+ </ul> 	
+</div>
+
+<div class="slide">
+<h1>Semantic Web / The Web of Data 2/2</h1>
+  <p>Uniform Resource Identifiers (URI)</p>
+  <p>Who knows what a <a href="http://www.w3.org/Addressing/">URI</a> is?</p>
+  <ul class="incremental">
+  <li>A URI is a compact <strong>sequence of characters</strong> that <strong>identifies</strong> an abstract concept
+  or a physical resource - RFC3986</li>
+  <li>foo://bar.com:8001/boo/x?something=value#fragment</li>
+  <li>\___/\___________/\____/ \_____________/ \______/</li>
+  <li>scheme   authority  path       query      fragment</li>
+  <li>URIs are NOT merely URLs!</li>
+  <li>And I should stress that <a href="http://www.w3.org/Provider/Style/URI">cool ones don't change</a>
+  <ul>
+   <li><strong>http://</strong></li>
+   <li><strong>mailto:</strong></li>
+   <li><strong>tag:</strong></li>
+   <li><strong>file://</strong></li>
+   <li><strong>isbn:</strong></li>
+   <li><strong>urn://</strong></li>
+   <li><strong>...</strong></li>
+  </ul></li>
+ </ul> 	
+</div>
+
+<div class="slide">
+<h1>RDF isn't that bad ...</h1>
+
+<ul>
+ <li>RDF is not simply a flavour of XML, but it can be serialised in XML, but it is very ugly
+ <pre>
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"&gt;
+ &lt;foaf:PersonalProfileDocument rdf:about=""&gt;
+	&lt;foaf:primaryTopic rdf:resource="http://mmt.me.uk/foaf.rdf#mischa"/&gt;
+ &lt;/foaf:PersonalProfileDocument&gt;
+
+ &lt;foaf:Person rdf:ID="mischa"&gt;
+	&lt;foaf:homepage rdf:resource="http://mmt.me.uk/"/&gt;
+ &lt;/foaf:Person&gt;
+&lt;/rdf:RDF&gt;
+ </pre></li>
+ <li> It can be serialised in other ways to make it easier to read ... 
+ <pre>
+ @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+ @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+  &lt;&gt; a foaf:PersonalProfileDocument ;
+  	 foaf:primaryTopic &lt;#mischa&gt; .
+  &lt;#mischa&gt; a foaf:Person ;
+	foaf:homepage &lt;http://mmt.me.uk/&gt; .
+ </pre>
+</li>
+ <li> It can even more verbose: 
+  <pre>
+    &lt;http://mmt.me.uk/foaf.rdf&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://xmlns.com/foaf/0.1/PersonalProfileDocument&gt; .
+    &lt;http://mmt.me.uk/foaf.rdf&gt; &lt;http://xmlns.com/foaf/0.1/primaryTopic&gt; &lt;http://mmt.me.uk/foaf.rdf#mischa&gt; .
+    &lt;http://mmt.me.uk/foaf.rdf#mischa&gt; &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;http://xmlns.com/foaf/0.1/Person&gt; .
+    &lt;http://mmt.me.uk/foaf.rdf#mischa&gt; &lt;http://xmlns.com/foaf/0.1/homepage&gt; &lt;http://mmt.me.uk/&gt; .
+  </pre></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>So what does all of this mean?</h1>
+ <ul>
+  <li>Represent your data in triples, use unique identifiers, and make use of as many shared conceptualisations as you can</li>
+  <li>So what are triples?: <strong>Subject Predicate Object</strong></li>
+  <li>Implied semantics in column name in a class db</li>
+  <li>And this is very similar in form to the simplest of English sentences</li>
+  <li><em>some guy called X has a homepage Y</em></li>
+  <li><pre> &lt;#personX&gt; foaf:homepage &lt;http://foo.com/bar&gt; .</pre></li> 
+  <li>Need to be able to bung any Class/property URI into a web browser to get its description</li>
+ </ul> 
+</div>
+
+<div class="slide">
+ <h1>Content Negotiation</h1>
+ <ul>
+  <li>Show /Music example on the BBC
+   <ul>
+    <li><pre>curl -I http://www.bbc.co.uk/music/artists/cc197bad-dc9c-440d-a5b5-d52ba2e14234</pre> Return "text/html"</li>
+    <li><pre>curl -I -H "Accept: application/rdf+xml" http://www.bbc.co.uk/music/artists/cc197bad-dc9c-440d-a5b5-d52ba2e14234</pre> Return "application/rdf+xml"</li>
+    </ul></li>
+   <li><a href="http://blog.dbtune.org/post/2009/03/24/A-sneak-peek-at-the-BBC-Music-RDF">http://blog.dbtune.org/post/2009/03/24/A-sneak-peek-at-the-BBC-Music-RDF</a> via Yves Raimond</li>
+  <li>I generate my homepage from my FOAF file, I just edit it in our <a href="http://foafbuilder.qdos.com/">foaf builder</a> thing and I 
+  write back via <a href="http://mmt.me.uk/blog/2009/03/19/webdav_webid/">webdav</a>, and to OAuth (for private data)</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Knowledge Representation and shared conceptualisations</h1>
+  <ul>
+   <li><a href="http://en.wikipedia.org/wiki/AI_winter">AI winter</a></li>
+   <li><a href="http://www.cyc.com/">CYC project</a></li>
+   <li><a href="http://en.wikipedia.org/wiki/">Wikipedia</a> ... <a href="http://dbpedia.org/">DBpedia</a> the consensus vote ...</li>
+   <li>Could this be leading us to a <em>Universal Vocabulary</em>?</li>
+  </ul>
+ </div> 
+
+<div class="slide">
+ <h1>The Picture 2 Years ago ...</h1>
+ <a href="http://homepages.cwi.nl/~troncy/Talks/2009-03-06-mozcamp/lod-datasets_2007-05.png"><img width="50%" src="images/lod-datasets_2007-05.png" alt="LOD as of 2007"/></a>
+</div>
+
+<div class="slide">
+ <h1>The Picture as of last year ...</h1>
+ <a href="http://richard.cyganiak.de/2007/10/lod/"><img src="images/lod-datasets_2008-03-31.png" width="50%" alt="LOD as of 2008"/></a>
+</div>
+
+<div class="slide">
+ <h1>The Picture Now</h1> 
+ <a href="http://www4.wiwiss.fu-berlin.de/bizer/pub/lod-datasets_2009-03-05.html"><img width="50%" src="images/lod-datasets_2009-03-05.png" alt="The new Semantic Web Layer Cake" /></a> 
+</div>
+
+<div class="slide">
+ <h1>So how does Personal Information fit into all this</h1>
+ <ul class="incremental">
+  <li>Associative Querying</li>
+  <li>My favourite <a href="http://www.w3.org/People/Berners-Lee/card#i">TimBL</a> picture :</li>
+  <li><a href="http://dig.csail.mit.edu/2008/Talks/1112-WSRICouncil-lk/images/SemWebAppMetro.png"><img src="images/SemWebAppMetro.png" width="50%" alt="TimBL metro"/></a></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Get involved</h1>
+  <ul>
+   <li>Tracks at WWW conferences (<a href="http://events.linkeddata.org/ldow2009/">Linked Data on the Web 2009</a>) is a good place to start</li>
+   <li><a href="http://iswc.semanticweb.org/">International Semantic Web Conferences</a></li>
+   <li><a href="http://esw.w3.org/topic/FrontPage">ESW wiki</a> at the W3C</li>
+   <li>#swig on irc.freenode.com</li>
+   <li>This talk can be found at this URL <a href="http://mmt.me.uk/slides/london011209">http://mmt.me.uk/slides/london011209</a></li>
+   <li><strong>Questions ?</strong></li>
+  </ul>
+ </div> 
+
+</body>
+</html>

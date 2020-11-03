@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head> 
+  <title>Garlik and Enterprise Semantic Web Technologies</title>
+  <meta name="copyright" content="http://creativecommons.org/licenses/by/3.0/"/>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/slidy-garlik.css" /> 
+  <script src="../Tools/Slidy/slidy.js" charset="utf-8" type="text/javascript"></script> 
+   <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/garlik.css" /> 
+</head>
+<body>
+<div class="background">
+  <img id="head-logo" title="Garlik logo" alt="Garlik Ltd" src="images/garlik.gif" style="width:92px;height:34px;"/>
+</div>
+
+<!-- Cover Page-->
+<div class="slide cover"> 
+ <a href="http://www.garlik.com/">
+  <img src="images/garlik_brown_black.jpg" alt="Garlik Ltd Logo" class="cover" />
+ </a>
+ <h1>Garlik and Enterprise Semantic Web Technologies</h1>
+ <p><a href="http://mmt.me.uk/foaf.rdf#mischa">Mischa Tuffield</a></p>
+ <p><a href="mailto:mischa.tuffield@garlik.com">mischa.tuffield@garlik.com</a></p>
+ <p>2010-04-22 : <a href="http://semweb.meetup.com/25/calendar/12648244/">http://semweb.meetup.com/25/calendar/12648244/</a></p>
+ <p>Slides : <a href="http://mmt.me.uk/slides/nysemweb20100422/">http://mmt.me.uk/slides/nysemweb20100422</a></p>
+</div> 
+
+<!--The slides-->
+
+<div class="slide">
+ <h1>Presentation Overview</h1>
+  <ul>
+   <li>Introduction - Who are Garlik?</li>
+   <li>Introduction to Talk</li>
+   <li>Garlik and the Semantic Web: <a href="http://www.garlik.com/products.php">DataPatrol</a> and <a href="http://qdos.com/">QDOS</a></li>
+   <li>4store</li>
+   <li>5store</li>
+   <li>DataPatrol</li>
+   <li>QDOS</li>
+   <li>foaf.qdos</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Introduction 1/2</h1>
+  <ul>
+   <li>Garlik is an online identity company. We are the online personal identity experts.</li>
+   <li>Our aim is to make our customers comfortable in a digital world.</li>
+   <li>By educating people about their digital identity</li>
+   <li>Founded by</li>
+   <ul>
+    <li>Mike Harris, founding CEO of Egg plc</li> 
+    <li>Egg CIO Tom Ilube</li>
+    <li>Professor Nigel Shadbolt, University of Southampton/Web Science/Data.gov.uk</li>
+   </ul>
+   <li>With an Advisor Board Including:</li>
+   <ul>
+    <li>Sir Tim Berners-Lee</li>
+    <li>Professor Dame Wendy Hall (President of the ACM)</li>
+   </ul>
+   <li>...</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Introduction 2/2</h1>
+  <ul>
+   <li>And a handful of Semantic Web Geeks</li>
+   <ul>
+    <li><a href="http://plugin.org.uk/swh.xrdf#me">Steve Harris</a></li>
+    <li>Nick Lamb</li>
+    <li>Cezary Biernaki</li>
+    <li><a href="http://mmt.me.uk/foaf.rdf#mischa">Me :)</a></li>
+   </ul>
+   <li>Funded by three of UK's leading blue chip Venture Capitalist firms</li>
+   <ul>
+    <li>Encore/DFJ Esprit</li>
+    <li>Doughty Hanson</li>
+    <li>Noble Venture Finance</li>
+   </ul>
+  </ul>
+</div>
+
+<div class="slide"> 
+ <h1>Introduction to this Talk</h1>
+ <ul>
+  <li>Garlik’s motivation, interest, and experiences of using Semantic Web (Linked Data) technologies in its online services</li>
+  <li>Methodologies and approaches that were taken in order to deploy online services to hundreds of thousands of users.</li> 
+  <li>DataPatrol, a consumer-centric personal information protection product.</li>
+  <li>QDOS a Linked Data service that is used to measure peoples’ online activity.</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Some Screenshots (1/3) ...</h1>
+ <p><a href="http://www.garlik.com/products.php"><img src="images/dpx.png" alt="DPX screenshot"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>Some Screenshots (2/3) ...</h1>
+ <p><a href="http://www.garlik.com/products.php"><img src="images/dpx2.png" alt="DPX screenshot 2"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>Some Screenshots (2/3) ...</h1>
+ <p><a href="http://qdos.com/"><img src="images/qdos.png" alt="QDOS screenshot"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>Our Motivations for Developing/Employing Semantic Web Technologies (1/2)</h1>
+ <ul>
+  <li>Flexibility</li>
+   <ul> 
+    <li>In capturing, and indexing Personal Information, whether it be specific data sources or information collected from the World Wide Web/compromised data feeds</li>
+    <li>Garlik needs to be able to act in an agile manner, if new data is available we have to search/index it quickly</li>
+   </ul>
+  <li>Scalability</li>
+   <ul>
+    <li>Needed to meet the demands of a high-volume consumer facing services</li>
+    <li>Developed our own clustered RDF storage solutions : <a href="http://4store.org/">4store</a> and <a href="http://4store.org/trac/wiki/5store">5store</a></li>
+   </ul>
+  <li>...</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Our Motivations for Developing/Employing Semantic Web Technologies (2/2)</h1>
+ <ul>
+  <li>Allows for Data Centric: Ontology/Schema Driven Software Engineering (will come back to this)</li>
+  <ul>
+   <li>Must be able to index/search over new data quickly</li>
+   <li>Garlik makes use the expressive power of RDF by implementing schema driven software solutions that allow for functionality to be added and removed by virtue of adding and removing triples from an RDF schema.</li>
+  </ul>
+  <li>Use and Promotion of Standards</li>
+  <li>The adoption and promotion of Web Standards have always been high on Garlik’s agenda, this is evident by the decision to release and support SPARQL compliant 4store under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPLv3 open-source license</a>
+  <li>Allows for trivial updates to backend platforms</li>
+   <ul>
+    <li>We are <a href="http://www.w3.org/">W3C members</a></li>
+    <ul>
+     <li>Steve is involved in the <a href="http://www.w3.org/2009/sparql/wiki/Main Page">SPARQL 1.1</a> Working Group</li>
+     <li>I am involved in the <a href="http://www.w3.org/2005/Incubator/socialweb/">Social Web Incubator Group</a></li>
+    </ul>
+   </ul>
+</div>
+
+<div class="slide">
+ <h1>In short ...</h1>
+  <ul>
+    <li>Trust me, we are a Semantic Web Technology Company</li>
+  </ul>
+  <ul class="incremental">
+    <li>We write Triplestores</li>
+    <ul>
+     <li>4store</li>
+     <li>5store</li>
+    </ul>
+    <li>We use Linked Data</li>
+    <li>We use SPARQL, HTTP, RDF over HTTP in our software architectures</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1>Our give to the Semantic Web Technology Stack</h1>
+  <ul>
+   <li>Now to talk about 4store and 5store, before talking about applications of these products</li>
+   <li>Some notes about the two</li>
+   <ul>
+    <li>Garlik’s RDF stores provide facilities over the HTTP protocol to allow access to information held within them.</li>
+    <li>Already mentioned the SPARQL protocol which allows queries to be run over HTTP, but in addition 4store and 5store allow data to be added and removed using the HTTP PUT and DELETE verbs</li>
+    <li>More info on: <a href="http://4store.org/trac/wiki/SparqlServer">http://4store.org/trac/wiki/SparqlServer</a></li>
+    <li>HTTP allows us to use existing, widely implemented HTTP features for data management means that updates can be made by lightweight, asynchronous, loosely coupled parser processes (will come back to this...) </li>
+    <li>They are both Quad stores, and not Triple stores</li>
+    <li>The schema-less nature of our use of RDF allows these new data sources to be imported into the RDF store without changes to any schemas, or affecting the operation of existing processes. RDF namespacing is used to distinguish new types of data, so existing queries, designed before the inclusion of the new data items will not be presented with new results.</li>
+   </ul>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>4store</h1>
+  <ul>
+   <li>Written in ANSI C99</li>
+   <li>In 2006, when Garlik was started, 4store had to store 1 billion triples (1GT), and answer queries in milliseconds</li> 
+   <li>In order to minimise downtime, import speed was critical, so as to meet SLAs Garlik have with partners</li>
+   <li>Sustained import speed of seventy thousand triples per second (70kT/s) is required in order to allow the dataset to be restored from backup data in four hours.</li>
+   <li>Fault tolerance, data replication was designed from outset</li>
+   <li>Holds quad-graph in RAM, clustered, using avahi, it is not a front-end to a RDBMS</li>
+   <li>DataPatrol has ~15(GT), and until last year (June 2009), it was powered by 4store, 9 x (4 gig RAM x86-64 CentOS) machine cluster</li>
+   <li>Since going open-source, numerous bugs and have reported, and fixed.</li>
+   <li>GPLv3 source code repo : <a href="http://github.com/garlik/4store">http://github.com/garlik/4store</a></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>4store's Network Topology</h1>
+ <ul>
+  <li><img width="45%" src="images/cluster.png" alt="4store Network Topology"/></li>
+ </ul>
+</div>
+
+<!-- 4store slide -->
+<div class="slide">
+ <h1>4store: <a href="http://4store.org/">http://4store.org/</a></h1>
+ <ul>
+  <li>4store, an efficient, scalable and stable RDF database</li>
+  <li>Run the Knowledge Bases that powers <a href="http://qdos.com/">QDOS</a>, and the <a href="http://foaf.qdos.com/">foaf.qdos</a> subdomain of QDOS in an 8 node cluster</li>
+  <li>For info/help come on <a href="irc://irc.freenode.net/#4store">irc://irc.freenode.net/#4store</a></li>
+  <li>Or if you don't do IRC, try our mailing list <a href="mailto:4store-support@googlegroups.com">4store-support@googlegroups.com</a></li>
+  <li>For tutorial on how to use 4store <a href="http://4store.org/presentations/bbc-2009-09-21/slides.html">http://4store.org/presentations/bbc-2009-09-21/slides.html</a></li>
+  <li>Reading if you like symbols :<a href="http://4store.org/publications/ harris-ssws09.pdf">Harris, S., Lamb, N., Shadbolt, N.: 4store: The design and implementation of a clustered RDF store. In: ISWC 2009 SSWS Workshop 09. Washington DC (2009)</a></li>
+ </ul>
+ <p><a href="http://4store.org/"><img src="images/4store.png" alt="4store logo"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+  <ul>
+  <li>As 4store’s capacity was stretched at 15GTs, and the import performance, of around 150 kT/s was felt to be insufficient, we decided to build 5store</li>
+  <li>Extreme scalability in mind. It is designed to operate with clusters of many hundreds of machines, and approaches double the triples per machine density of 4store</li>
+  <li>Strengths are performance, scalability and stability in the domain of RDF storage and SPARQL queries.</li>
+  <li>NO RDFS reasoning, and NO REASONING ... (will come back to this)</li>
+  <li>As both 4store and 5store adhere closely to the SPARQL standards, upgrading is trivial</li>
+  <li>Compared to working with RDBMS system, upgrading is said to be alot easier, i.e. no need to write new code</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+ <ul>
+  <li>5store was designed from scratch for clusters of up to 1,000 machines.</li>
+  <li>The goal was to scale over 1 Trillion (10^12) triples</li>
+  <li>This should be easy achievable given a large enough cluster.</li>
+  <li>Given the new indexing algorithms deployed, there is no effective limit on the number of triples stored</li> 
+  <li>Rather it is constrained by the practicalities of cluster size, network speed and so on</li>
+  <li>This is something we will be address very shortly</li>
+  <li> 5store is implemented in ANSI C99 and C++. It makes use of custom discovery and clustering technologies and proprietary, novel indexing algorithms. It is primarily intended to run on 64-bit Linux platforms with high RAM density</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+  <ul>
+   <li>Import Performance and SLAs</li>
+   <ul> 
+   <li>Time taken to reimport data into a system is becoming even more important. 5store comfortably achieves sustained import speeds of a million triples per second on a 16 node cluster, allowing a ten billion triple store to be restored in under three hours.</li>
+   <li>Commodity lost cost hardware, will standard single SATA disks</li>
+   <li>Could be improved by using more disks</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+ <ul>
+  <li>Has been running our live production DataPatrol instance since June 2009</li>
+  <li>Information will *hopefully* be found in the "Linking Enterprise Data Book" due out in the next few months</li>
+  <li>Contact <a href="mailto:steve.harris@garlik.com">Steve</a> or <a href="mailto:mischa.tuffield@garlik.com">Mischa</a></li>
+  <li>The Stationary Office (TSO), who maintain and manage most of the http://data.gov.uk/ are the first people to have bought 5store <a href="http://www.tso.co.uk/press/latestnews/archive/2010/triplestore/">TSO Press Release Regarding the Sale of 5store</a></li>
+  <li></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>What DataPatrol does for its customers</h1>
+  <ul>
+   <li>It helps by protecting its users from the following</li>
+   <li><img src="images/DP-Customers.png" alt="DataPatrol for Customers"/></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's non-exclusive Partner Companies</h1>
+ <ul>
+  <li>We are currently operating in Germany, US, UK, and we are expanding ...</li>
+  <li><img src="images/partners.png" alt="Garlik's Partners"/></li>
+  <li>As well as: <a href="http://www.cpp-group.de/">CPP Germany</a>, <a href="http://www.sovereignbank.com/">Sovereign Bank</a>, <a href="http://www.geeksquad.co.uk/">Geek Squad</a>, <a href="http://www.selftrade.co.uk/">Selftrade</a></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol Technologies used</h1>
+  <ul>
+   <li>5store</li>
+   <li><a href="http://java.sun.com/">Java</a></li>
+   <li><a href="http://jetty.codehaus.org/jetty/">Jetty</a></li>
+   <li>SPARQL</li>
+   <li>SPARQL Protocol</li>
+   <li>HTTP+RDF (<a href="http://www.dajobe.org/2004/01/turtle/">turtle</a>)</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's Software Architecture Enables</h1>
+ <ul>
+  <li>Extensive Management Information (MI) capabilities, for our data providers</li>
+  <li>Based on Provenance information attached to all data via Named Graphs in quad-store</li>
+  <ul>
+   <li>The Companies House Register</li>
+   <li>The Births, Deaths, and Marriages Register</li>
+   <li>Euro Direct Marketing Database</li>
+   <li>The Royal Mail Redirects Database (only third party to access)</li>
+   <li>The WWW</li>
+   <li>Our sources of compromised data (continuous updates)</li>
+   <li>No need to a MI system, as all data is quad-store is always indexed, no mysql related problems...</li>
+   <li>Some partners require:</li>
+    <ul>
+     <li>Data to be deleted after a given duration</li>
+     <li>That we pay them per "hit" on their data-source</li>
+    </ul>
+   <ul>
+  </ul>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's Software Architecture Enables</h1>
+ <ul>
+ <li>Web Service based Architecture (use of <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful APIs)</a></li>
+  <ul>
+   <li>Take advantage of mature technology, http caches, http libraries</li>
+   <li>Allows for simple debugging</li>
+   <li>Staged deployment</li>
+   <li>No complicated test scripts, Object Models, horrible database abstraction technology</li>
+   <li>Easy/known entity for modern day developers</li>
+   <li>By passes connection-pooling issues, short lives connection to the backend store</li>
+  </ul>
+  <li>Internally accessible Linked Data for CS team</li>
+  <li>Allows for debugging of customer related questions</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's Software Architecture</h1>
+ <ul>
+   <li><img width="30%" src="images/dpx-arch.png" alt="DataPatrol Architecture"/></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>QDOS</h1>
+  <ul>
+   <li>We all have a presence in the online world whether we use the internet or not and protecting yourself from identity fraud is just one side of the story</li>
+   <li>Our digital presence also increasingly opens up new opportunities and influences real world decisions made about us</li> 
+   <li>Recent research has shown that more and more British citizens are making decisions based on digital status. Already 16% have chosen their new home based on how their prospective neighbours appear online. 1 in 5 (20%) have researched a prospective boss online before accepting a job and 32% have searched online to find out more about trades people and professionals, from plumbers to lawyers, before hiring them to do a job.</li>
+  <li> Garlik commissioned PCP market research consultants to conduct research among 2000 UK adults in November 2007</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>QDOS</h1>
+  <ul>
+   <li>More public example</li>
+   <li>We CAN NOT expose DataPatrol's internals due to privacy reasons</li>
+   <li>10 million FOAF files</li>
+   <li>And there will be more soon!</li>
+   <li>Linked Open Data App</li>
+   <li>Part of the Linked Data Cloud for a while now</li>
+   <li>Conneg, and Schema Driven Software Deployment (will come to this very shortly)</li> 
+   <li>With a bunch of RESTFul Web-services on <a href="http://foaf.qdos.com/">http://foaf.qdos.com/</a></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>QDOS's software Architecture</h1>
+ <ul>
+  <li><img width="30%" src="images/qdos-arch.png" alt="QDOS Architecture"/></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Schema Driven</h1>
+  <ul>
+  <li>Flexibility to deploy, with no service downtime - this makes us <b>agile</b></li>
+  <li>This is used in DataPatrol for our compromised data-feeds</li>
+  <li>QDOS shows this in pseudo public manner</li>
+  <li>QDOS's backend "Score calculators" runs of this method</li>
+  <li>This is visible in the <a href="http://qdos.com/schema">QDOS Schema</a></li>
+  <li>User data is visible here <a href="http://qdos.com/user/5acc361496df109a7c2967760d5d9792/rdfxml">http://qdos.com/user/5acc361496df109a7c2967760d5d9792/rdfxml"</a></li>
+  <li>Data is visible here <a href="http://qdos.com/user/5acc361496df109a7c2967760d5d9792-ext/rdfxml">http://qdos.com/user/5acc361496df109a7c2967760d5d9792-ext/rdfxml</a></li>
+ </ul>
+</div>
+
+
+
+
+
+
+<div class="slide">
+ <h1>Conclusions</h1>
+  <ul>
+   <li><b>Industrial Strength Semantic Web Applications are NOT the future, we have them NOW</b></li>
+   <li><b>Practicality</b> The capabilities of the SPARQL 1.0 query language are somewhat limited compared to typical SQL implementations. This often means that more processing work is required in the application layer, and can mean that more queries are required to answer the same question, compared to a SQL-based implementation. However, this is offset by the convenience of the high degree of standardisation between stores, and the high degree of flexibility in data representation.</li>
+   <li><b>HTTP+RDF</b>All of our services communicate using RDF, the consequences of this are that we achieve a high degree of flexibility with respect to staged deployments incorporating new capabilities.</li>
+   <li><b>Cost Effectiveness</b> Despite the high engineering effort involved in developing two cluster-based RDF stores, we feel that overall this effort was well justified. The data volumes that can be held by 5store in particular are similar to those held in Key-Value stores, but yet we have access to a standard, and relatively sophisticated query language that supports very efficient join operations. On cheap commodity hardware</li>
+   <li><b>Reliability and Uptime</b> There is inevitably some concern when deploying software on top of a newly developed database system, however we have been operating our production system on 4store and 5store for several years now, while retaining high uptime, and without data loss. Engineering of the storage system for robustness, and the use of redundant clusters has helped in this area, and we do not feel that we suffered any more downtime that if we had gone for a more traditional RDBMS.</li>
+  </ul>
+</div>
+
+</body>
+</html>

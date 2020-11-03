@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+<head> 
+  <title>Using GIT</title>
+  <meta name="copyright" content="http://creativecommons.org/licenses/by/3.0/"/>
+  <script src="../Tools/Slidy/slidy.js" charset="utf-8" type="text/javascript"></script> 
+   <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/mmt-white.css" /> 
+</head>
+<body>
+<!-- Background -->
+<div class="background"> 
+ <a href="http://mmt.me.uk/"><img id="head-icon" alt="mmt.me.uk Logo" src="../../images/WiltedButtercup-small.png"/></a>
+</div> 
+<!-- Cover Page-->
+<div class="slide cover"> 
+<!-- <img src="../../images/WiltedButtercup.png" alt="Cover page images (keys)" class="cover" /> -->
+ <h1>Using GIT</h1>
+ <p>Name: Mischa Tuffield</p>
+ <p>WebID: <a href="http://mmt.me.uk/foaf.rdf#mischa">http://mmt.me.uk/foaf.rdf#mischa</a></p>
+</div> 
+
+<!--The slides-->
+<div class="slide"> 
+ <h1>Git not Github</h1>
+  <ul>
+   <li>Open source software <a href="http://git-scm.com/">git-scm.com</a></li>
+   <li>This is not about github, but all of this talk applies to github usage</li>
+   <li>Writing by Linus Torvalds, you can watch him give a <a href="http://youtu.be/4XpnKHJAok8">talk about git on youtube</a></li>
+   <li><object style="height: 390px; width: 640px"><param name="movie" value="https://www.youtube.com/v/4XpnKHJAok8?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="https://www.youtube.com/v/4XpnKHJAok8?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></object></li>
+  </ul>
+ </div> 
+
+<div class="slide"> 
+<h1>What is Git</h1>
+ <ul>
+   <li>A Version Control System, like CVS,SVN, and hg</li>
+   <li>Is a system for managing and tracking changes to files</li>
+   <li>Your *nix flavoured machine is nothing but a collection of files</li>
+   <li>Have you ever lost work, because of machine failure before?</li>
+ </ul>
+ </div> 
+
+<div class="slide"> 
+ <h1>Distributed Version Control</h1>
+  <ul>
+   <li>Distributed</li>
+   <li>Everyone has the entire history on their machines</li>
+   <li>Allows for work off-line</li>
+   <li>Allows for protection from single points of failture</li>
+  </ul>
+ </div> 
+
+<div class="slide">
+ <h1>Git consists of</h1>
+ <ul>
+  <li>Repositories: a collection of files and their history</li>
+  <li>History: Each change made in the history has a unique identifier (commits)</li>
+  <li>Branches: carbon copies of of these files</li>
+  <li></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Repositories</h1>
+ <ul>
+  <li>A folder on your machine</li>
+  <li>Like PISAE,PISOA, or PIAPP</li>
+  <li>There will be one for Data Science</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Please ...</h1>
+  <ul>
+   <li>Make lots of little small commits</li>
+   <li>Limit the changes in a commit to a single bug fix/new feature</li>
+   <li>Don't push broken code</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Cloning a repository</h1>
+  <ul>
+   <li>In git speak one "clones" a repository</li>
+   <li>This creates a local copy of a repository</li>
+   <pre>git clone git://github.com/mischat/Test.git</pre>
+   <li>Now you should have a folder on your machine called Test</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>History - Changing a file</h1>
+  <ul>
+   <li>Once you have cloned the repository, make a change to the README file</li>
+   <li>Once you have made a change run <strong>git status</strong></li>
+   <li>This tells you what changes have been made to the repo</li>
+   <pre>
+   melgo:Test mmt$ git status
+   # On branch master
+   # Changes not staged for commit:
+   #   (use "git add <file>..." to update what will be committed)
+   #   (use "git checkout -- <file>..." to discard changes in working directory)
+   #
+   #	modified:   README
+   #
+   no changes added to commit (use "git add" and/or "git commit -a")
+   </pre>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>History - see exactly what changes have been made</h1>
+ <ul>
+  <li><strong>git diff [optional filename]</strong></li>
+  <pre>
+  melgo:Test mmt$ git diff
+  diff --git a/README b/README
+  index ebf366d..9e658d9 100644
+  --- a/README
+  +++ b/README
+  @@ -1 +1 @@
+  -Hello World :)
+  +Hello PeerIndex :)
+  </pre>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>History - Create a "commit" Step 1 - add</h1>
+ <ul>
+  <li><strong>git add README</strong></li>
+  <pre>
+  melgo:Test mmt$ git add README 
+  melgo:Test mmt$ git status
+  # On branch master
+  # Changes to be committed:
+  #   (use "git reset HEAD <file>..." to unstage)
+  #
+  #	modified:   README
+  #
+  </pre>
+  <li>Useful shortcut, but BE CAREFUL</li>
+  <li><strong>git add .</strong></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>History - Create a "commit" Step 2 - commit</h1>
+ <ul>
+  <li><strong>git commit</strong></li>
+  <pre>
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       modified:   README
+#
+  </pre>
+  <li>Another shortcut <strong>git commit -m "Was asked to say hello to PeerIndex"</strong></li>
+  <li>Set your prefered editor using the environment variable <strong>GIT_EDITOR</strong></li>
+  <li>Now you have committed the code to your own repository</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>History - Pushing history upstream</h1>
+ <ul>
+  <li>git push</li>
+  <pre>
+  melgo:Test mmt$ git push 
+  git lCounting objects: 5, done.
+  Writing objects: 100% (3/3), 279 bytes, done.
+  Total 3 (delta 0), reused 0 (delta 0)
+
+  To git@github.com:mischat/Test.git
+     efe088f..2017619  master -> master
+  </pre>   
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>History - Listing the history</h1>
+ <ul>
+  <li>This all the changes in repo (file/directory)</li>
+  <li>git log [optionalpath]</li>
+  <pre>
+  melgo:Test mmt$ git log 
+  commit 20176197627ef2a9f5f9ee304b04f218c6b8d8a0
+  Author: Mischa Tuffield <mischa@mmt.me.uk>
+  Date:   Fri Feb 17 13:55:45 2012 +0000
+
+    Was asked to say hello to PeerIndex
+
+  commit efe088f34adc029da74dd72e9e0625d64251dab4
+  Author: Mischa Tuffield <mischa@mmt.me.uk>
+  Date:   Fri Feb 17 13:46:21 2012 +0000
+
+    Initial Commit to the Repo
+    </pre>
+ <li>You can ask for the history of a given file</li>
+ <li><strong>git log lame.txt</strong></li>
+ </ul> 
+</div>
+
+<div class="slide">
+ <h1>History - show changes in a given commit</h1>
+  <ul>
+   <li>Show what a commit changed</li>
+   <li><strong>git show 20176197627ef2a9f5f9ee304b04f218c6b8d8a0 [optionalfilename]</strong></li>
+   <pre>
+   melgo:Test mmt$ git show 20176197627ef2a9f5f9ee304b04f218c6b8d8a0
+   commit 20176197627ef2a9f5f9ee304b04f218c6b8d8a0
+   Author: Mischa Tuffield <mischa@mmt.me.uk>
+   Date:   Fri Feb 17 13:55:45 2012 +0000
+
+    Was asked to say hello to PeerIndex
+
+   diff --git a/README b/README
+   index ebf366d..9e658d9 100644
+   --- a/README
+   +++ b/README
+   @@ -1 +1 @@
+   -Hello World :)
+   +Hello PeerIndex :)
+  </pre>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>History - Exactly who changes what line when</h1>
+ <ul> 
+  <li><strong>git blame filename</strong></li>
+  <pre>
+  6a998f24 (Alister Bulman               2011-09-13 13:56:35 +0000  33) role :app,     "api.viewsflow.com", "api3.viewsflow.com"
+  ^b688b4a (matija.rijavec@peerindex.net 2011-06-06 10:29:44 +0000  34) 
+  b6c800d5 (alister.bulman@peerindex.net 2011-07-01 17:24:17 +0000  35) # adding other known process servers as they come
+  ^b688b4a (matija.rijavec@peerindex.net 2011-06-06 10:29:44 +0000  36) # this is so we can # cap deploy, > with process !deploy
+  16ba0bdc (avleen.vig@peerindex.net     2011-06-23 14:51:48 +0000  37) # process1 aka process(4/9)
+  16ba0bdc (avleen.vig@peerindex.net     2011-06-23 14:51:48 +0000  38) # process2 aka process(2/8)
+  6a998f24 (Alister Bulman               2011-09-13 13:56:35 +0000  39) #role :process, "process.viewsflow.com", "process2.viewsflow.com"
+  b6c800d5 (alister.bulman@peerindex.net 2011-07-01 17:24:17 +0000  40) 
+  ^b688b4a (matija.rijavec@peerindex.net 2011-06-06 10:29:44 +0000  41) # 46.51.130.109  worker, larry
+  ^b688b4a (matija.rijavec@peerindex.net 2011-06-06 10:29:44 +0000  42) # 79.125.64.99   worker, scruffy
+  ^b688b4a (matija.rijavec@peerindex.net 2011-06-06 10:29:44 +0000  43) # 46.137.54.254  worker, panucci
+  b6c800d5 (alister.bulman@peerindex.net 2011-07-01 17:24:17 +0000  44) # 79.125.88.69   worker, calculon
+  b6c800d5 (alister.bulman@peerindex.net 2011-07-01 17:24:17 +0000  45) # 46.137.133.93  worker, crushinator
+
+  </pre>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>History - Refreshing your repo to the latest checout</h1>
+ <ul>
+  <li>Please NEVER use <strong>git pull</strong></li>
+  <li>And try to use <strong>git pull --rebase or git up</strong></li>
+  <li>This doesn't allow you to 
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Using --rebase, you might not want to commit</h1>
+  <ul>
+   <li>Make use of <strong>git stash</strong> and <strong>git pop</strong></li>
+   <li>As you wont be able to pull unless you have NO uncommitted changes</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1>Revert</h1>
+   <ul>
+     <li>This unapplies a commit made</li>
+     <li><strong>git revert [SHA1 of a commit]</strong></li>
+   </ul>
+</div>
+
+<div class="slide">
+  <h1>Merging</h1>
+  <p>Demo :)</p>
+</div>
+
+<div class="slide">
+  <h1>Branching</h1>
+  <ul>
+   <li>Branches are <strong>Lines of development/changes</strong></li>
+   <li>If anything, a branch is a <strong>directed acyclic graph of development</strong> rather than a line.</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Create branches for new features, for significant changes</h1>
+  <ul>
+   <li>Branches are your friends - <strong> use them </strong></li>
+   <li>Allows one to conceptually split of a thread of work</li>
+   <pre>
+     A-----C----E ("stable")
+       \
+        B-----D-----F ("new-idea")
+   </pre>
+  </ul>
+  </div>
+
+<div class="slide">
+ <h1>Explanation</h1>
+ <p>So the commits A, C and E are on "stable" and A, B, D and F are on "new-idea". If you then merge "new-idea" onto "stable" with the following commands</p>
+i
+<pre>
+    git checkout stable   # Change to work on the branch "stable"
+    git merge new-idea    # Merge in "new-idea"
+</pre>
+
+</div>
+
+<div class="slide">
+ <h1>And then you have the following ...</h1>
+ <pre>
+
+  A-----C----E----G ("stable")
+    \             /
+      B-----D-----F ("new-idea")
+
+</pre>
+</div>
+
+<div class="slide">
+ <h1>If you carry on committing ...</h1>
+  <ul>
+   <li>on "new idea" and on "stable", you get:</li>
+ <pre>
+
+  A-----C----E----G ("stable")
+   \             /
+     B-----D-----F ("new-idea")
+</pre>
+ <li>So now A, B, C, D, E, F, G and H are on "stable", while A, B, D, F and I are on "new-idea".</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Resetting work in a branch</h1>
+ <pre>
+    last version from another repository
+          |
+          v
+      M---N-----O----P---Q ("master")
+</pre>
+</div>
+
+<div class="slide">
+ <h1>Resetting work in a branch 2 </h1>
+ <pre>
+   git branch dubious-experiment
+
+  M---N-----O----P---Q ("master" and "dubious-experiment")
+</pre>
+</div>
+
+<div class="slide">
+ <h1>Resetting work in a branch 3 </h1>
+ <pre>
+   git checkout master
+
+  # Be careful with this next command: make sure "git status" is
+  # clean, you're definitely on "master" and the
+  # "dubious-experiment" branch has the commits you were working
+  # on first...
+
+  git reset --hard [SHA1sum of commit N]
+
+       ("master")
+         M---N-------------O----P---Q ("dubious-experiment")
+</pre>
+ <p>This reverts the master branch ignoring the dubious experiment</p>
+</div>
+
+<div class="slide">
+ <h1>Listing branches</h1>
+  <ul>
+   <li>Local <strong>git branch</strong></li>
+   <li>Remote <strong>git branch -a</strong></li>
+   <pre>
+melgo:4store-mischat mmt$ git branch
+  4storemaster
+  * master
+  melgo:4store-mischat mmt$ git branch -a
+    4storemaster
+    * master
+    remotes/4storemaster/delete
+    remotes/4storemaster/gh-pages
+    remotes/4storemaster/master
+    remotes/4storemaster/narrowdistinct
+    remotes/4storemaster/plaintext
+    remotes/4storemaster/prefixes
+    remotes/4storemaster/raptor1
+    remotes/4storemaster/raptor2
+    remotes/origin/HEAD -> origin/master
+    remotes/origin/delete
+    remotes/origin/gh-pages
+    remotes/origin/master
+    remotes/origin/narrowdistinct
+    remotes/origin/plaintext
+    remotes/origin/prefixes
+    remotes/origin/raptor1
+    remotes/origin/raptor2
+    remotes/rafl/delete
+    remotes/rafl/gh-pages
+    remotes/rafl/master
+    remotes/rafl/narrowdistinct
+    remotes/rafl/plaintext
+    remotes/rafl/prefixes
+    remotes/rafl/raptor1
+    remotes/rafl/raptor2
+    melgo:4store-mischat mmt$ 
+   </pre>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Creating a local branch (only you, not working with others)</h1>
+ <ul>
+ <li>To create a new branch</li>
+ <li><strong>git checkout -b lamebranch</strong></li>
+ <li>list bracnhes</li>
+ <li><strong>git branch</strong></li>
+ <li>delete branch</li>
+ <li><strong>git branch -d lamebranch</strong></li>
+ <li>merge branch</li>
+ <li><strong>git merge lamebranch</strong></li>
+</ul>
+</div>
+
+<div class="slide">
+ <h1>Checking out a remote branch</h1>
+  <ul>
+    <li>This is when someone else created a remote and you want to work on the same branch as them</li>
+     <li><strong>git checkout --track -b lame origin/lame</strong></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Creating a remote branch</h1>
+  <ul>
+    <li>If you would like to create a remote so that other people can work with you</li>
+     <li><strong>git checkout -b lamebranch</strong></li>
+     <li><strong>git push origin lamebranch:lamebranch</strong></li>
+     <li><strong>look in git/config (make sure it is a remote branch)</strong></li>
+     <li>Add the following your to repo's .git/config file</li>
+     <pre>
+[branch "lamebranch"]
+     remote = origin
+     merge = refs/heads/lamebranch
+    </pre>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1> Cherry-picking changes in git </h1>
+ <ul>
+<li>If you find that you would like to select commits from a different branch, and merge into a different branch without having to merge the whole lot, you can cherry-pick git commits individually.</li>
+<pre>
+git cherry-pick 1d67bdbbdb4b98d142bdcce1b78cbe4d2d396afd
+</pre>
+</ul>
+</div>
+
+<div class="slide">
+ <h1>Tagging your git repo</h1>
+ <ul>
+<li>You can also create tags in a git repo. This is how I make tags in my repos:</li>
+<li>We should never deploy code which hasn't been tagged</li>
+
+<li><strong>git tag -a "TAG _NAME"</strong></li>
+<li><strong>git push --tags</strong></li>
+</ul>
+</div>
+
+<div class="slide">
+ <h1>GIT Config</h1>
+ <ul>
+  <li>git config --global --add alias.up 'pull --rebase'</li>
+  <li>For your git config</li>
+  <li><strong>NEVER GIT PULL, ALWAYS REBASE</strong></li>
+  <li><pre>[alias]
+          up = pull --rebase</pre></li>
+  <li>Add your name and email address</li>
+  <li><pre>[user]
+          name = Mischa Tuffield
+          email = mischa@mmt.me.uk</pre></li>
+  <li>Add colour to your git command line</li>
+  <li><pre>[color]
+          ui = true</pre></li>
+ </ul>
+</div>
+
+<div class="slide"> 
+ <h1>Finally?</h1>
+  <ul>
+   <li>Start using git, ask for help, go on irc.freenode.net #git for help</li>
+   <li>Check out these slides <a href="http://mmt.me.uk/slides/git020217">http://mmt.me.uk/slides/git020217</a>
+   <li>Checkout out my blog post <a href="http://mmt.me.uk/blog/2011/12/01/using-git/">http://mmt.me.uk/blog/2011/12/01/using-git/</a>
+   <li><strong>Questions ?</strong></li>
+  </ul>
+ </div> 
+
+</body>
+</html>

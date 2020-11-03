@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head> 
+  <title>Garlik and Enterprise Semantic Web Technologies</title>
+  <meta name="copyright" content="http://creativecommons.org/licenses/by/3.0/"/>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/slidy-garlik.css" /> 
+  <script src="../Tools/Slidy/slidy.js" charset="utf-8" type="text/javascript"></script> 
+   <link rel="stylesheet" type="text/css" media="screen, projection, print" href="../Tools/Slidy/garlik.css" /> 
+</head>
+<body>
+<div class="background">
+  <img id="head-logo" title="Garlik logo" alt="Garlik Ltd" src="images/garlik.gif" style="width:92px;height:34px;"/>
+</div>
+
+<!-- Cover Page-->
+<div class="slide cover"> 
+ <a href="http://www.garlik.com/">
+  <img src="images/garlik_brown_black.jpg" alt="Garlik Ltd Logo" class="cover" />
+ </a>
+ <h1>Garlik and Enterprise Semantic Web Technologies</h1>
+ <p><a href="http://mmt.me.uk/foaf.rdf#mischa">Mischa Tuffield</a></p>
+ <p><a href="mailto:mischa.tuffield@garlik.com">mischa.tuffield@garlik.com</a></p>
+ <p>2010-04-22 : <a href="http://semweb.meetup.com/25/calendar/12648244/">http://semweb.meetup.com/25/calendar/12648244/</a></p>
+ <p>Slides : <a href="http://mmt.me.uk/slides/nysemweb20100422/">http://mmt.me.uk/slides/nysemweb20100422</a></p>
+</div> 
+
+<!--The slides-->
+
+<div class="slide">
+ <h1>Presentation Overview</h1>
+  <ul>
+   <li>Introduction - Who are Garlik?</li>
+   <li>Introduction to Talk</li>
+   <li>Garlik and the Semantic Web: <a href="http://www.garlik.com/products.php">DataPatrol</a> and <a href="http://qdos.com/">QDOS</a></li>
+   <li>4store</li>
+   <li>5store</li>
+   <li>DataPatrol</li>
+   <li>QDOS</li>
+   <li>foaf.qdos</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Introduction 1/2</h1>
+  <ul>
+   <li>Garlik is an online identity company. We are the online personal identity experts.</li>
+   <li>Our aim is to make our customers comfortable in a digital world.</li>
+   <li>By educating people about their digital identity</li>
+   <li>Founded by</li>
+   <ul>
+    <li>Mike Harris, founding CEO of Egg plc</li> 
+    <li>Egg CIO Tom Ilube</li>
+    <li>Professor Nigel Shadbolt, University of Southampton/Web Science/Data.gov.uk</li>
+   </ul>
+   <li>With an Advisor Board Including:</li>
+   <ul>
+    <li>Sir Tim Berners-Lee</li>
+    <li>Professor Dame Wendy Hall (President of the ACM)</li>
+   </ul>
+   <li>...</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>Introduction 2/2</h1>
+  <ul>
+   <li>And a handful of Semantic Web Geeks</li>
+   <ul>
+    <li><a href="http://plugin.org.uk/swh.xrdf#me">Steve Harris</a></li>
+    <li>Nick Lamb</li>
+    <li>Cezary Biernacki</li>
+    <li><a href="http://mmt.me.uk/foaf.rdf#mischa">Me :)</a></li>
+   </ul>
+   <li>Funded by three of UK's leading blue chip Venture Capitalist firms</li>
+   <ul>
+    <li>Encore/DFJ Esprit</li>
+    <li>Doughty Hanson</li>
+    <li>Noble Venture Finance</li>
+   </ul>
+  </ul>
+</div>
+
+<div class="slide"> 
+ <h1>Introduction to this Talk</h1>
+ <ul>
+  <li>Garlik’s motivation, interest, and experiences of using Semantic Web (Linked Data) technologies in its online services</li>
+  <li>Methodologies and approaches that were taken in order to deploy online services to hundreds of thousands of users.</li> 
+  <li>DataPatrol, a consumer-centric personal information protection product.</li>
+  <li>QDOS a Linked Data service that is used to measure peoples’ online activity.</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Some Screenshots (1/3) ...</h1>
+ <p><a href="http://www.garlik.com/products.php"><img src="images/dpx.png" alt="DPX screenshot"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>Some Screenshots (2/3) ...</h1>
+ <p><a href="http://www.garlik.com/products.php"><img src="images/dpx2.png" alt="DPX screenshot 2"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>Some Screenshots (2/3) ...</h1>
+ <p><a href="http://qdos.com/"><img src="images/qdos.png" alt="QDOS screenshot"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>Our Motivations for Developing/Employing Semantic Web Technologies (1/2)</h1>
+ <ul>
+  <li>Flexibility</li>
+   <ul> 
+    <li>In capturing, and indexing Personal Information, whether it be specific data sources or information collected from the World Wide Web/compromised data feeds</li>
+    <li>Garlik needs to be able to act in an agile manner, if new data is available we have to search/index it quickly</li>
+   </ul>
+  <li>Scalability</li>
+   <ul>
+    <li>Needed to meet the demands of a high-volume consumer facing services</li>
+    <li>Developed our own clustered RDF storage solutions : <a href="http://4store.org/">4store</a> and <a href="http://4store.org/trac/wiki/5store">5store</a></li>
+   </ul>
+  <li>...</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Our Motivations for Developing/Employing Semantic Web Technologies (2/2)</h1>
+ <ul>
+  <li>Allows for Data Centric: Ontology/Schema Driven Software Engineering (will come back to this)</li>
+  <ul>
+   <li>Must be able to index/search over new data quickly</li>
+   <li>Garlik makes use the expressive power of RDF by implementing schema driven software solutions that allow for functionality to be added and removed by virtue of adding and removing triples from an RDF schema.</li>
+  </ul>
+  <li>Use and Promotion of Standards</li>
+  <li>The adoption and promotion of Web Standards have always been high on Garlik’s agenda, this is evident by the decision to release and support SPARQL compliant 4store under the <a href="http://www.gnu.org/licenses/gpl-3.0.html">GPLv3 open-source license</a>
+  <li>Allows for trivial updates to backend platforms</li>
+   <ul>
+    <li>We are <a href="http://www.w3.org/">W3C members</a></li>
+    <ul>
+     <li>Steve is involved in the <a href="http://www.w3.org/2009/sparql/wiki/Main Page">SPARQL 1.1</a> Working Group</li>
+     <li>I am involved in the <a href="http://www.w3.org/2005/Incubator/socialweb/">Social Web Incubator Group</a></li>
+    </ul>
+   </ul>
+</div>
+
+<div class="slide">
+ <h1>In short ...</h1>
+  <ul>
+    <li>Trust me, we are a Semantic Web Technology Company</li>
+  </ul>
+  <ul class="incremental">
+    <li>We write Triplestores</li>
+    <ul>
+     <li>4store</li>
+     <li>5store</li>
+    </ul>
+    <li>We use Linked Data</li>
+    <li>We use SPARQL, HTTP, RDF over HTTP in our software architectures</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1>Our give to the Semantic Web Technology Stack</h1>
+  <ul>
+   <li>Now to talk about 4store and 5store, before talking about applications of these products</li>
+   <li>Some notes about the two</li>
+   <ul>
+    <li>Garlik’s RDF stores provide facilities over the HTTP protocol to allow access to information held within them.</li>
+    <li>Already mentioned the SPARQL protocol which allows queries to be run over HTTP, but in addition 4store and 5store allow data to be added and removed using the HTTP PUT and DELETE verbs</li>
+    <li>More info on: <a href="http://4store.org/trac/wiki/SparqlServer">http://4store.org/trac/wiki/SparqlServer</a></li>
+    <li>HTTP allows us to use existing, widely implemented HTTP features for data management means that updates can be made by lightweight, asynchronous, loosely coupled parser processes (will come back to this...) </li>
+    <li>They are both Quad stores, and not Triple stores</li>
+    <li>The schema-less nature of our use of RDF allows these new data sources to be imported into the RDF store without changes to any schemas, or affecting the operation of existing processes. RDF namespacing is used to distinguish new types of data, so existing queries, designed before the inclusion of the new data items will not be presented with new results.</li>
+   </ul>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>4store</h1>
+  <ul>
+   <li>Written in ANSI C99</li>
+   <li>In 2006, when Garlik was started, 4store had to store 1 billion triples (1GT), and answer queries in milliseconds</li> 
+   <li>In order to minimise downtime, import speed was critical, so as to meet SLAs Garlik have with partners</li>
+   <li>Sustained import speed of seventy thousand triples per second (70kT/s) is required in order to allow the dataset to be restored from backup data in four hours.</li>
+   <li>Fault tolerance, data replication was designed from outset</li>
+   <li>Holds quad-graph in RAM, clustered, using avahi, it is not a front-end to a RDBMS</li>
+   <li>DataPatrol has ~15(GT), and until last year (June 2009), it was powered by 4store, 9 x (4 gig RAM x86-64 CentOS) machine cluster</li>
+   <li>Since going open-source, numerous bugs and have reported, and fixed.</li>
+   <li>GPLv3 source code repo : <a href="http://github.com/garlik/4store">http://github.com/garlik/4store</a></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>4store's Network Topology</h1>
+ <ul>
+  <li><img width="45%" src="images/cluster.png" alt="4store Network Topology"/></li>
+ </ul>
+</div>
+
+<!-- 4store slide -->
+<div class="slide">
+ <h1>4store: <a href="http://4store.org/">http://4store.org/</a></h1>
+ <ul>
+  <li>4store, an efficient, scalable and stable RDF database</li>
+  <li>Run the Knowledge Bases that powers <a href="http://qdos.com/">QDOS</a>, and the <a href="http://foaf.qdos.com/">foaf.qdos</a> subdomain of QDOS in an 8 node cluster</li>
+  <li>For info/help come on <a href="irc://irc.freenode.net/#4store">irc://irc.freenode.net/#4store</a></li>
+  <li>Or if you don't do IRC, try our mailing list <a href="mailto:4store-support@googlegroups.com">4store-support@googlegroups.com</a></li>
+  <li>For tutorial on how to use 4store <a href="http://4store.org/presentations/bbc-2009-09-21/slides.html">http://4store.org/presentations/bbc-2009-09-21/slides.html</a></li>
+  <li>Reading if you like symbols :<a href="http://4store.org/publications/ harris-ssws09.pdf">Harris, S., Lamb, N., Shadbolt, N.: 4store: The design and implementation of a clustered RDF store. In: ISWC 2009 SSWS Workshop 09. Washington DC (2009)</a></li>
+ </ul>
+ <p><a href="http://4store.org/"><img src="images/4store.png" alt="4store logo"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+  <ul>
+  <li>As 4store’s capacity was stretched at 15GTs, and the import performance, of around 150 kT/s was felt to be insufficient, we decided to build 5store</li>
+  <li>Extreme scalability in mind. It is designed to operate with clusters of many hundreds of machines, and approaches double the triples per machine density of 4store</li>
+  <li>Strengths are performance, scalability and stability in the domain of RDF storage and SPARQL queries.</li>
+  <li>NO RDFS reasoning, and NO REASONING ... (will come back to this)</li>
+  <li>As both 4store and 5store adhere closely to the SPARQL standards, upgrading is trivial</li>
+  <li>Compared to working with RDBMS system, upgrading is said to be alot easier, i.e. no need to write new code</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+ <ul>
+  <li>5store was designed from scratch for clusters of up to 1,000 machines.</li>
+  <li>The goal was to scale over 1 Trillion (10^12) triples</li>
+  <li>This should be easy achievable given a large enough cluster.</li>
+  <li>Given the new indexing algorithms deployed, there is no effective limit on the number of triples stored</li> 
+  <li>Rather it is constrained by the practicalities of cluster size, network speed and so on</li>
+  <li>This is something we will be address very shortly</li>
+  <li> 5store is implemented in ANSI C99 and C++. It makes use of custom discovery and clustering technologies and proprietary, novel indexing algorithms. It is primarily intended to run on 64-bit Linux platforms with high RAM density</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+  <ul>
+   <li>Import Performance and SLAs</li>
+   <ul> 
+   <li>Time taken to reimport data into a system is becoming even more important. 5store comfortably achieves sustained import speeds of a million triples per second on a 16 node cluster, allowing a ten billion triple store to be restored in under three hours.</li>
+   <li>Commodity lost cost hardware, will standard single SATA disks</li>
+   <li>Could be improved by using more disks</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>5store</h1>
+ <ul>
+  <li>Has been running our live production DataPatrol instance since June 2009</li>
+  <li>Information will *hopefully* be found in the "Linking Enterprise Data Book" due out in the next few months</li>
+  <li>Contact <a href="mailto:steve.harris@garlik.com">Steve</a> or <a href="mailto:mischa.tuffield@garlik.com">Mischa</a></li>
+  <li>The Stationary Office (TSO), who maintain and manage most of the http://data.gov.uk/ are the first people to have bought 5store <a href="http://www.tso.co.uk/press/latestnews/archive/2010/triplestore/">TSO Press Release Regarding the Sale of 5store</a></li>
+  <li></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>What DataPatrol does for its customers</h1>
+  <ul>
+   <li>It helps by protecting its users from the following</li>
+   <li><img src="images/DP-Customers.png" alt="DataPatrol for Customers"/></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's non-exclusive Partner Companies</h1>
+ <ul>
+  <li>We are currently operating in Germany, US, UK, and we are expanding ...</li>
+  <li><img src="images/partners.png" alt="Garlik's Partners"/></li>
+  <li>As well as: <a href="http://www.cpp-group.de/">CPP Germany</a>, <a href="http://www.sovereignbank.com/">Sovereign Bank</a>, <a href="http://www.geeksquad.co.uk/">Geek Squad</a>, <a href="http://www.selftrade.co.uk/">Selftrade</a></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol Technologies used</h1>
+  <ul>
+   <li>5store</li>
+   <li><a href="http://java.sun.com/">Java</a></li>
+   <li><a href="http://jetty.codehaus.org/jetty/">Jetty</a></li>
+   <li>SPARQL</li>
+   <li>SPARQL Protocol</li>
+   <li>HTTP+RDF (<a href="http://www.dajobe.org/2004/01/turtle/">turtle</a>)</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's Software Architecture Enables</h1>
+ <ul>
+  <li>Extensive Management Information (MI) capabilities, for our data providers</li>
+  <li>Based on Provenance information attached to all data via Named Graphs in quad-store</li>
+  <ul>
+   <li>The Companies House Register</li>
+   <li>The Births, Deaths, and Marriages Register</li>
+   <li>Euro Direct Marketing Database</li>
+   <li>The Royal Mail Redirects Database (only third party to access)</li>
+   <li>The WWW</li>
+   <li>Our sources of compromised data (continuous updates)</li>
+   <li>No need to a MI system, as all data is quad-store is always indexed, no mysql related problems...</li>
+   <li>Some partners require:</li>
+    <ul>
+     <li>Data to be deleted after a given duration</li>
+     <li>That we pay them per "hit" on their data-source</li>
+    </ul>
+   <ul>
+  </ul>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's Software Architecture Enables</h1>
+ <ul>
+ <li>Web Service based Architecture (use of <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful APIs)</a></li>
+  <ul>
+   <li>Take advantage of mature technology, http caches, http libraries</li>
+   <li>Allows for simple debugging</li>
+   <li>Staged deployment</li>
+   <li>No complicated test scripts, Object Models, horrible database abstraction technology</li>
+   <li>Easy/known entity for modern day developers</li>
+   <li>By passes connection-pooling issues, short lives connection to the backend store</li>
+  </ul>
+  <li>Internally accessible Linked Data for CS team</li>
+  <li>Allows for debugging of customer related questions</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>DataPatrol's Software Architecture</h1>
+ <ul>
+   <li><img width="30%" src="images/dpx-arch.png" alt="DataPatrol Architecture"/></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>QDOS</h1>
+  <ul>
+   <li>We all have a presence in the online world whether we use the internet or not and protecting yourself from identity fraud is just one side of the story</li>
+   <li>Our digital presence also increasingly opens up new opportunities and influences real world decisions made about us</li> 
+   <li>Recent research has shown that more and more British citizens are making decisions based on digital status. Already 16% have chosen their new home based on how their prospective neighbours appear online. 1 in 5 (20%) have researched a prospective boss online before accepting a job and 32% have searched online to find out more about trades people and professionals, from plumbers to lawyers, before hiring them to do a job.</li>
+  <li> Garlik commissioned PCP market research consultants to conduct research among 2000 UK adults in November 2007</li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>QDOS</h1>
+  <ul>
+   <li>More public example</li>
+   <li>We CAN NOT expose DataPatrol's internals due to privacy reasons</li>
+   <li>10 million FOAF files</li>
+   <li>And there will be more soon!</li>
+   <li>Linked Open Data App</li>
+   <li>Part of the Linked Data Cloud for a while now</li>
+   <li>Conneg, and Schema Driven Software Deployment (will come to this very shortly)</li> 
+   <li>With a bunch of RESTFul Web-services on <a href="http://foaf.qdos.com/">http://foaf.qdos.com/</a></li>
+  </ul>
+</div>
+
+<div class="slide">
+ <h1>QDOS's software Architecture</h1>
+ <ul>
+  <li><img width="30%" src="images/qdos-arch.png" alt="QDOS Architecture"/></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Schema Driven</h1>
+  <ul>
+  <li>Flexibility to deploy, with no service downtime - this makes us <b>agile</b></li>
+  <li>This is used in DataPatrol for our compromised data-feeds</li>
+  <li>QDOS shows this in pseudo public manner</li>
+  <li>QDOS's backend "Score calculators" runs of this method</li>
+  <li>This is visible in the <a href="http://qdos.com/schema">QDOS Schema</a></li>
+  <li>User data is visible here <a href="http://qdos.com/user/5acc361496df109a7c2967760d5d9792/rdfxml">http://qdos.com/user/5acc361496df109a7c2967760d5d9792/rdfxml"</a></li>
+  <li>Data is visible here <a href="http://qdos.com/user/5acc361496df109a7c2967760d5d9792-ext/rdfxml">http://qdos.com/user/5acc361496df109a7c2967760d5d9792-ext/rdfxml</a></li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1><a href="http://foaf.qdos.com/">foaf.qdos.com</a></h1>
+  <ul>
+   <li>Making FOAF useful</li>
+   <li>Bi-directional distributed social graph</li>
+   <li>Linked Data needs indexes, and crawl based, distributed querying will not cut it</li>
+   <li>Public RESTful webservices which output RDF</li>
+  </ul>
+
+</div>
+
+<!-- FOAF -->
+<div class="slide">
+ <h1>FOAF : The Friend-Of-A-Friend Ontology</h1>
+ <ul>
+  <li><i>'The Friend of a Friend (FOAF) project began early in 2000 as an "experimental linked information project", created by <a href="http://danbri.org/foaf.rdf#danbri">Dan Brickley</a> and <a href="http://swordfish.rdfweb.org/people/libby/rdfweb/webwho.xrdf">Libby Miller</a>.'</i></li>
+  <li>RDF : <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></li>
+  <li>HTML : <a href="http://www.foaf-project.org/">http://www.foaf-project.org/</a></li>
+  <li>FOAF makes it possible for people to build large scale, decentralised, open social networks that are controlled by individual users.</li>
+  <li>Sites such as : <i>LiveJournal, hi5, vox, friendfeed?, google???,...</i></li>
+  <li>Reflectors : <i> twitter, flickr, lastfm, delicious, ... </i></li>
+ </ul>
+ <p><a href="http://www.foaf-project.org/"><img src="images/SmileysTransp.gif" alt="foaf logo"/></a></p>
+</div>
+
+<div class="slide">
+ <h1>...</h1>
+ <a href="http://richard.cyganiak.de/2007/10/lod/"><img src="images/lod-datasets_2009-07-14.png" alt="lod cloud"/></a>
+</div>
+
+<!-- Blob -->
+<div class="slide">
+ <h1>The FOAF Landscape as per Q1 2009</h1>
+ <p><img src="images/foaf-blob.png" alt="Foaf blob"/></p>
+</div>
+
+<!--The slides-->
+<div class="slide">
+ <h1>Overview (a Steve-ism)</h1>
+ <map name="GraffleExport" id="graffleExport">
+  <area shape="rect" coords="96,55,246,155" href="http://foaf.qdos.com/validator/" alt="box validator"/>
+  <area shape="rect" coords="38,343,188,443" href="http://foaf.qdos.com/verify-demo" alt="box verify-demo"/>
+  <area shape="rect" coords="124,488,274,588" href="http://foaf.qdos.com/reverse" alt="box reverse"/>
+  <area shape="rect" coords="352,498,502,598" href="http://foaf.qdos.com/forward" alt="box forwardt"/>
+  <area shape="rect" coords="38,199,188,299" href="http://foaf.qdos.com/sameas" alt="box sameas"/>
+  <area shape="rect" coords="546,199,696,299" href="http://private.qdos.com/" alt="box private"/>
+  <area shape="rect" coords="299,27,449,127" href="http://foaf.qdos.com/find/?q=http%3A%2F%2Fmmt.me.uk%2Fblog%2F" alt="box viewer"/>
+  <area shape="rect" coords="503,55,653,155" href="http://foafbuilder.qdos.com/" alt="box foafbuilder"/>
+  <area shape="rect" coords="299,282,449,382" href="http://4store.org/" alt="box 4store"/>
+  <area shape="rect" coords="428,357,578,457" href="http://4store.org/" alt="box 4store"/>
+ </map>
+ <img style="border:0" src="images/connections.png" usemap="#GraffleExport" alt="overview of foaf.qdos.com"/>
+</div>
+
+<!-- Viewer -->
+<div class="slide">
+ <h1>Viewer (1): <a href="http://foaf.qdos.com/">http://foaf.qdos.com/</a></h1>
+  <ul>
+   <li>HTML view of a FOAF PersonalProfileDocument</li>
+   <li>Includes a list of friends</li>
+   <li>Includes a view of who claims to know the given foaf:Person</li>
+   <li>Caters for searching on FOAF <a href="http://mmt.me.uk/blog/2009/09/07/foaf-ifps/">IFPs</a> (<a href="http://esw.w3.org/topic/InverseFunctionalProperty">what is an IFP?</a>)</li>
+  </ul>
+<!--  <ul class="incremental"> -->
+  <ul>
+   <li><a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/mbox_sha1sum">foaf:mbox_sha1sum</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/jabberID">foaf:jabberID</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">foaf:isPrimaryTopicOf</a></li>
+   <li><a href="http://xmlns.com/foaf/0.1/weblog">foaf:weblog</a></li>
+   <li> ... </li>
+ </ul>
+</div>
+
+<!-- Viewer 2 -->
+<div class="slide">
+ <h1>Viewer (2): <a href="http://foaf.qdos.com/find/?q=http://planb.nicecupoftea.org/">http://foaf.qdos.com/find/?q=http://planb.nicecupoftea.org/</a></h1>
+  <a href="http://foaf.qdos.com/find/?q=http://planb.nicecupoftea.org/"><img src="images/libby_viewer.png" width="70%" alt="How Useful"/></a>
+</div>
+
+<!-- Builder 1 -->
+<div class="slide">
+ <h1>Builder (1): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+   <li>RAP</li>
+   <li>AJAR(ish)</li>
+   <li>SPARQL</li>
+   <li>SPARQL-PROTOCOL to 4-store</li>
+   <li>A Foaf Editor which allows you to :
+    <ul>
+     <li>Search for a FOAF file</li>
+     <li>Build and store a FOAF file</li>
+     <li>Edit their own existing FOAF file</li>
+     <li>Manage privacy and permissions</li>
+     <li>Provision of a service that allows people to search and browse millions of FOAF files in a user friendly way</li>
+     <li>Edit / Store Personal Info in both a Public and Private Manner</li>
+    </ul>
+   </li>
+ </ul>
+</div>
+
+<!-- Builder 2 -->
+<div class="slide">
+ <h1>Builder (2): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+  <li>Get your location via GUI</li>
+ </ul>
+  <img src="images/location.png" width="70%" alt="Location Editor"/>
+</div>
+
+<!-- Builder 3 -->
+<div class="slide">
+ <h1>Builder (2): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+  <li>Write to WebDAV, save the file to your machine, ...</li>
+ </ul>
+  <img src="images/writing.png" width="70%" alt="Advanced Writing"/>
+</div>
+
+<!-- Builder 3 -->
+<div class="slide">
+ <h1>Builder (3): <a href="http://foafbuilder.qdos.com/">http://foafbuilder.qdos.com/</a></h1>
+  <ul>
+  <li>Get the RDF out of the FOAF builder</li>
+ </ul>
+  <img src="images/geekview.png" width="70%" alt="Geek View"/>
+</div>
+
+<!--OAuth -->
+<div class="slide">
+ <h1>Private foaf.qdos.com <a href="http://private.qdos.com/">http://private.qdos.com/</a></h1>
+  <ul>
+  <li>Get your own FOAF OAuth endpoint with your OpenID URI</li>
+  <li>Allows for private FOAF data to be stored and retrieved from an OAuth endpoint</li>
+ </ul>
+  <img src="images/private.png" width="70%" alt="Private OAuth"/>
+</div>
+
+<!-- Forward Search -->
+<div class="slide">
+ <h1>Forward Search: <a href="http://foaf.qdos.com/forward/">http://foaf.qdos.com/forward/</a></h1>
+ <ul>
+  <li>Entering a unique identifier for a foaf:Person (i.e. email address, mbox sha1sum, homepage, weblog, or a FOAF URI) will return FOAF RDF listing foaf:Persons which the identifier claims to know.</li>
+  <li>Parameters : <i>path</i> and <i>ifp</i></li>
+  <li>Example 1: <a href="http://foaf.qdos.com/forward?path=http://danbri.org/&amp;ifp">http://foaf.qdos.com/forward?path=http://danbri.org/&amp;ifp</a></li>
+  <li><pre>
+&lt;http://users.ecs.soton.ac.uk/nrs/foaf.rdf#me&gt;
+    a foaf:Person ;
+    foaf:knows [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "965c47c5a70db7407210cef6e4e6f5374a525c5c" ;
+        foaf:name "Tim Berners-Lee"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "26a374ad4de937252c044f7dd45aa48ecbdb4f16" ;
+        foaf:name "Steve Harris"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "28339a9a36ee4e330da9613958efb89e2961c6cb" ;
+        foaf:name "Nick Gibbins"
+    ], [
+        a foaf:Person ;
+        foaf:mbox_sha1sum "ca2d238d1ade1efb7128874e99e84fdef5a3c447" ;
+        foaf:name "Tom Heath"
+    ] .
+</pre></li>
+ <li> Example 2: <a href="http://foaf.qdos.com/forward?path=http://moustaki.org/foaf.rdf%23moustaki">http://foaf.qdos.com/forward?path=http://moustaki.org/foaf.rdf%23moustaki</a></li>
+ </ul>
+</div>
+
+<!-- SameAs Search -->
+<div class="slide">
+ <h1>SameAs Search: <a href="http://foaf.qdos.com/sameas/">http://foaf.qdos.com/sameas/</a></h1>
+ <ul>
+  <li>To get owl:sameAs triples about a given foaf:Person according to their FOAF presence enter their URI,
+email address, mbox sha1sum, homepage or blog URL above and click 'Go'.</li>
+  <li>Entering a unique identifier for a foaf:Person (i.e. email address, mbox sha1sum, homepage, weblog, or a FOAF URI) will return FOAF RDF listing the URIs we think are owl:sameAs.</li>
+  <li>Parameters : <i>path</i> and <i>ifp</i></li>
+  <li>Example 1: <a href="http://foaf.qdos.com/sameas?path=http://danbri.org/&amp;ifp">http://foaf.qdos.com/sameas?path=http://danbri.org/&amp;ifp</a></li>
+  <li><pre>
+&lt;http://danbri.org/foaf.rdf#danbri&gt; a foaf:Person .
+&lt;http://danbri.org/foaf.rdf#danbri&gt; owl:sameAs _:genid1 .
+_:genid1 a foaf:Person .
+_:genid1 foaf:homepage &lt;http://danbri.org/&gt; .
+&lt;http://foafbuilder.qdos.com/people/danbri.org/foaf.rdf#danbri&gt; a foaf:Person .
+&lt;http://foafbuilder.qdos.com/people/danbri.org/foaf.rdf#danbri&gt; owl:sameAs _:genid2 .
+_:genid2 a foaf:Person .
+_:genid2 foaf:homepage &lt;http://danbri.org/&gt; .
+&lt;http://www.advogato.org/person/danbri/foaf.rdf#me&gt; a foaf:Person . 
+&lt;http://www.advogato.org/person/danbri/foaf.rdf#me&gt; owl:sameAs _:genid3 .
+_:genid3 a foaf:Person .
+_:genid3 foaf:homepage &lt;http://danbri.org/&gt; .
+</pre></li>
+ <li> Example 2: <a href="http://foaf.qdos.com/sameas?path=http://plugin.org.uk/swh.xrdf%23me">http://foaf.qdos.com/sameas?path=http://plugin.org.uk/swh.xrdf#me</a></li>
+ <li>Similar in vain to Hugh/Ian's <a href="http://sameas.org/">http://sameas.org/</a></li>
+ </ul>
+</div>
+
+<!-- Reverse Search -->
+<div class="slide">
+ <h1>Reverse Search: <a href="http://foaf.qdos.com/reverse/">http://foaf.qdos.com/reverse/</a></h1>
+ <ul>
+ <li>Entering a unique identifier for a foaf:Person (i.e. one of the IFPs email address, mbox sha1sum, homepage, weblog, or a FOAF URI) will return FOAF RDF listing the people which claim to know the identifier presented.</li>
+  <li>Parameters : <i>path</i> and <i>ifp</i></li>
+  <li>Example 1: <a href="http://foaf.qdos.com/reverse?path=http://danbri.org/&amp;ifp">http://foaf.qdos.com/reverse?path=http://danbri.org/&amp;ifp</a></li>
+  <li> Example 2: <a href="http://foaf.qdos.com/reverse?path=http://tomheath.com/id/me">http://foaf.qdos.com/reverse?path=http://tomheath.com/id/me</a></li>
+ </ul>
+  <pre>
+&lt;http://tomheath.com/id/me&gt; a foaf:Person .
+
+&lt;http://nxg.me.uk/norman&gt;
+    a foaf:Person ;
+    foaf:homepage &lt;http://nxg.me.uk&gt;, &lt;http://www.astro.gla.ac.uk/users/norman/&gt; ;
+    foaf:knows &lt;http://tomheath.com/id/me&gt; ;
+    foaf:mbox_sha1sum "0254b43a4c00a8c5eb9093d9820353640ee02786", "14f2d3a469303d0faca13f73064845ddda4d2dbd", 
+     "58a587e433b1e0c22aa026eeee7703ffcee6262c","bfeee75c2025815392014a95cfd4b6aad117c07f", 
+     "84612b3540a255bb11de3db579e02533ff2631c5", "baa162e14a20b3fafbccbf0fceaa1159a3a042d1",     
+     "c9994fd3713561d0d9a468cd30c11a0f3cb3055a", "e6578555a8108ea83ee7f1d60556e63fd83bcc5e" ;
+    foaf:name "Norman Gray" .
+
+[]
+    a foaf:Person ;
+    foaf:homepage &lt;http://kmi.open.ac.uk/people/mikele&gt; ;
+    foaf:knows &lt;http://tomheath.com/id/me&gt; ;
+    foaf:mbox_sha1sum "97ddc048d1a7df5e6fcb8f530777896a395d3dc1" ;
+    foaf:name "Michele Pasin" .
+
+&lt;http://www.aelius.com/njh#me&gt;
+    a foaf:Person ;
+    foaf:homepage &lt;http://www.aelius.com/njh/&gt; ;
+    foaf:knows &lt;http://tomheath.com/id/me&gt; ;
+    foaf:mbox_sha1sum "3f361af12a473b48852819e3ff9153783149a26a", "a8476e8096db2bde20a734c8446bb3d60befea2b" ;
+    foaf:name "Nicholas J Humfrey" .
+
+</pre>
+
+</div>
+
+<!-- How is this Useful -->
+<div class="slide">
+ <h1>So how is this useful..?</h1> 
+  <ul>
+   <li>Try adding the following triples to your foaf file: </li>
+  </ul>
+   <pre>
+&lt;#me&gt; rdfs:seeAlso &lt;http://foaf.qdos.com/forward?path=http://foo.com/blog&amp;ifp&gt;
+&lt;#me&gt; rdfs:seeAlso &lt;http://foaf.qdos.com/reverse?path=http://foo.com/blog&amp;ifp&gt;
+&lt;#me&gt; rdfs:seeAlso &lt;http://foaf.qdos.com/sameas?path=http://foo.com/blog&amp;ifp&gt;
+   </pre>
+</div>
+
+<!-- Social Verification Info -->
+<div class="slide">
+ <h1>OpenID Social Verifier (1): <a href="http://foaf.qdos.com/verify-about">http://foaf.qdos.com/verify-about</a></h1>
+ <ul>
+   <li>The service is implemented as a RESTful HTTP service.</li>
+   <li>You send requests to the service with an identifier for you and the OpenID you wish to verify.</li>
+   <li>If the OpenID is within 2 people of you then the service returns YES, and the distance between you and them, 0 being an ID for you, and 2 being 2 people away, for example:
+   <pre>
+  &lt;verify&gt;
+  &lt;result degree="2"&gt;YES&lt;result&gt;
+  &lt;verify&gt;
+  </pre></li>
+  <li>The endpoint of the REST service is <a href="http://foaf.qdos.com/verify">http://foaf.qdos.com/verify</a> and the arguments are action, qdosuri, ifp, ifpval and openid.</li>
+  <li><i>action</i> Check or List</li>
+</ul>
+</div>
+
+<!-- Social Verification Demo -->
+<div class="slide">
+ <h1>OpenID Social Verifier (2): <a href="http://foaf.qdos.com/verify-demo">http://foaf.qdos.com/verify-demo</a></h1>
+  <a href="http://foaf.qdos.com/verify?action=list&amp;ifp=foaf%3Ahomepage&amp;ifpval=http%3A//danbri.org/"><img src="images/socialDemo.png" width="70%" alt="How Useful"/></a>
+</div>
+
+<!-- Validator -->
+<div class="slide">
+ <h1>Validator: <a href="http://foaf.qdos.com/validator/">http://foaf.qdos.com/validator/</a></h1>
+ <ul>
+  <li>Checks to whether a RDF document makes correct use of the FOAF ontology</li>
+ </ul>
+ <a href="http://foaf.qdos.com/validator/uri?URI=http%3A%2F%2Fmmt.me.uk%2Ffoaf.rdf&amp;PARSE=Parse+URI%3A+">
+  <img src="images/validator.png" alt="FOAF validator picture"/></a> 
+</div>
+
+<!-- Future Direction -->
+<div class="slide">
+ <h1>Future Direction in the foaf.qdos.com world</h1>
+ <ul>
+  <li>Full Text Search over FOAF files</li>
+  <li>Grab all of it !</li>
+  <li>Server to Server updates : XMPP <a href="http://svn.foaf-project.org/foaftown/jqbus/intro.html">JQbus</a>?</li>
+  <li>OAuth which Interacts with 4store code to be released</li>
+  <li>Write Data out of FOAF builder to any OAuth</li>
+  <li>More Robust Triangulation option</li>
+  <li>FOAF+SSL for sign-on</li>
+  <li>Continual Update</li>
+  <li>Release code snipbits for people to ping to the FOAF KB <a href="http://foaf.qdos.com/ping">http://foaf.qdos.com/ping</a></li>
+  <li>Release stats on connectivity and richness of FOAF data from different sites</li>
+  <li>Find time and Write a paper :)</li>
+ </ul>
+</div>
+
+<div class="slide">
+ <h1>Conclusions</h1>
+  <ul>
+   <li><b>Industrial Strength Semantic Web Applications are NOT the future, we have them NOW</b></li>
+   <li><b>Practicality</b> The capabilities of the SPARQL 1.0 query language are somewhat limited compared to typical SQL implementations. This often means that more processing work is required in the application layer, and can mean that more queries are required to answer the same question, compared to a SQL-based implementation. However, this is offset by the convenience of the high degree of standardisation between stores, and the high degree of flexibility in data representation.</li>
+   <li><b>HTTP+RDF</b>All of our services communicate using RDF, the consequences of this are that we achieve a high degree of flexibility with respect to staged deployments incorporating new capabilities.</li>
+   <li><b>Cost Effectiveness</b> Despite the high engineering effort involved in developing two cluster-based RDF stores, we feel that overall this effort was well justified. The data volumes that can be held by 5store in particular are similar to those held in Key-Value stores, but yet we have access to a standard, and relatively sophisticated query language that supports very efficient join operations. On cheap commodity hardware</li>
+   <li><b>Reliability and Uptime</b> There is inevitably some concern when deploying software on top of a newly developed database system, however we have been operating our production system on 4store and 5store for several years now, while retaining high uptime, and without data loss. Engineering of the storage system for robustness, and the use of redundant clusters has helped in this area, and we do not feel that we suffered any more downtime that if we had gone for a more traditional RDBMS.</li>
+  </ul>
+</div>
+
+</body>
+</html>
