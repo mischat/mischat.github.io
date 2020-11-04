@@ -18,6 +18,7 @@ tags:
   - lego
   - starwars
   - work
+comments: true
 ---
 Today I am writing a little note to say goodbye and big thank you to all at [Garlik](http://www.garlik.com/). After spending the last (nearly) 4 years of my life working, living, and breathing Garlik, I have decided to start a new adventure. Garlik was wonderful place to work, we built some exciting applications, ones which delivered utility to people, as well as ones which innovated, to the highest standard, pushing boundaries in the development of commercial semantic web applications. 
 
