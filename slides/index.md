@@ -1,6 +1,7 @@
 ---
 layout: post 
 title: Slides and Talks
+comments: false
 ---
 
 # Here are some talks I have given in the past

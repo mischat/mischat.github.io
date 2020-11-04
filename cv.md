@@ -1,6 +1,7 @@
 ---
 layout: post 
 title: Curriculum Vitae
+comments: false
 ---
 
 Summary

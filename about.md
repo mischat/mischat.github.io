@@ -1,6 +1,7 @@
 ---
 layout: post 
 title: About
+comments: false
 ---
 [I](https://uk.linkedin.com/in/mischat/) am currently the Founding CTO of [Monolith](https://monolith.xyz/) (previously known as TokenCard), an Ethereum Project on a mission to disrupt consumer banking. We are building the world’s first truly decentralised consumer banking platform; bringing decentralisation to the masses. We believe that we can provide users with a user experience akin to a consumer bank, in an equitable manner, with one core difference, our users never need relinquish control of their assets.
 
