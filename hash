@@ -17,7 +17,7 @@
 <script src="pwdhash/pwdhash.js" type="text/javascript"></script>
 <script src="pwdhash/hashed-password.js" type="text/javascript"></script>
 <script src="pwdhash/domain-extractor.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="styles/pwdhash.css" />
+<link rel="stylesheet" type="text/css" href="pwdhash/pwdhash.css" />
 <script type="text/JavaScript">
 <!--
 function timedRefresh(timeoutPeriod) {
