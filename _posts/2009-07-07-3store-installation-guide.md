@@ -1,5 +1,6 @@
 ---
 id: 3
+comments: true
 title: 3store Installation Guide
 date: 2009-07-07T17:01:14+01:00
 author: Mischa

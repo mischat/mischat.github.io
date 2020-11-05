@@ -1,5 +1,6 @@
 ---
 id: 77
+comments: true
 title: Determining the Level of Trust of a Digitally Signed Document
 date: 2009-07-08T17:38:37+01:00
 author: Mischa

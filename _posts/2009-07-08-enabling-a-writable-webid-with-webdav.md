@@ -1,5 +1,6 @@
 ---
 id: 50
+comments: true
 title: Enabling a Writable WebID with WebDAV
 date: 2009-07-08T11:45:49+01:00
 author: Mischa

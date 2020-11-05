@@ -1,5 +1,6 @@
 ---
 id: 542
+comments: true
 title: Leaving Garlik. In Search of New Adventures
 date: 2011-12-05T03:28:04+01:00
 author: Mischa

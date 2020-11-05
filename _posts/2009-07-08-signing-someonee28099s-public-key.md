@@ -1,5 +1,6 @@
 ---
 id: 46
+comments: true
 title: Signing someone’s public key
 date: 2009-07-08T11:22:02+01:00
 author: Mischa

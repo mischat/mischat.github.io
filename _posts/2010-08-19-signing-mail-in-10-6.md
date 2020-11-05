@@ -1,5 +1,6 @@
 ---
 id: 218
+comments: true
 title: Signing Mail on Snow Leopard
 date: 2010-08-19T16:58:35+01:00
 author: Mischa

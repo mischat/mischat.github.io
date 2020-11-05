@@ -1,5 +1,6 @@
 ---
 id: 43
+comments: true
 title: Signing and Verifying documents using GnuPG
 date: 2009-07-08T11:20:28+01:00
 author: Mischa

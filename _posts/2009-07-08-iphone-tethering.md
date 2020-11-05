@@ -1,5 +1,6 @@
 ---
 id: 68
+comments: true
 title: 'iPhone Tethering &#8230;'
 date: 2009-07-08T13:55:36+01:00
 author: Mischa

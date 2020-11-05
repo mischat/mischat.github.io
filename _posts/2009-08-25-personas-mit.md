@@ -1,5 +1,6 @@
 ---
 id: 101
+comments: true
 title: Personas @ MIT
 date: 2009-08-25T02:13:29+01:00
 author: Mischa
