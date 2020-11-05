@@ -1,6 +1,5 @@
 ---
 id: 40
-"comments: true"
 title: Making FOAF useful ?
 date: 2009-07-08T11:16:31+01:00
 author: Mischa

@@ -1,6 +1,5 @@
 ---
 id: 445
-"comments: true"
 title: My Response to the NHS
 date: 2010-11-30T13:57:54+01:00
 author: Mischa

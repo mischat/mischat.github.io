@@ -1,6 +1,5 @@
 ---
 id: 94
-"comments: true"
 title: meh to owl:equivalentClass
 date: 2009-08-10T18:26:53+01:00
 author: Mischa

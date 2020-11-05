@@ -1,6 +1,5 @@
 ---
 id: 87
-"comments: true"
 title: Privacy, Data Mashups, and Practical Obscurity
 date: 2009-08-05T16:09:00+01:00
 author: Mischa

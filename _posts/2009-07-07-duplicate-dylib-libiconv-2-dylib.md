@@ -1,6 +1,5 @@
 ---
 id: 15
-"comments: true"
 title: duplicate dylib libiconv.2.dylib
 date: 2009-07-07T17:29:27+01:00
 author: Mischa

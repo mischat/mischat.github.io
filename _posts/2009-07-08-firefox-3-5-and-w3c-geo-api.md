@@ -1,6 +1,5 @@
 ---
 id: 60
-"comments: true"
 title: Firefox 3.5 and W3C Geo API
 date: 2009-07-08T13:09:29+01:00
 author: Mischa

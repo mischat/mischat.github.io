@@ -1,6 +1,5 @@
 ---
 id: 138
-"comments: true"
 title: Compiling 4store on a Fedora 12 box
 date: 2009-12-14T14:40:16+01:00
 author: Mischa

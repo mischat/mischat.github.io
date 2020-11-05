@@ -1,6 +1,5 @@
 ---
 id: 392
-"comments: true"
 title: Disabling Referer Headers in Firefox
 date: 2010-11-21T17:25:22+01:00
 author: Mischa

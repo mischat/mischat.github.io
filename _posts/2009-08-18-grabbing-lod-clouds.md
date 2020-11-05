@@ -1,6 +1,5 @@
 ---
 id: 92
-"comments: true"
 title: Grabbing LOD clouds
 date: 2009-08-18T10:57:09+01:00
 author: Mischa

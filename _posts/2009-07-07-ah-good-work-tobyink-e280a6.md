@@ -1,6 +1,5 @@
 ---
 id: 32
-"comments: true"
 title: Ah, good work tobyink …
 date: 2009-07-07T18:24:25+01:00
 author: Mischa

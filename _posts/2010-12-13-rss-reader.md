@@ -1,6 +1,5 @@
 ---
 id: 455
-"comments: true"
 title: Knocking up my own RSS reader
 date: 2010-12-13T00:05:14+01:00
 author: Mischa

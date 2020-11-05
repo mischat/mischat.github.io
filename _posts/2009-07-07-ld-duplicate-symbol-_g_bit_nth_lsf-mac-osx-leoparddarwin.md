@@ -1,6 +1,5 @@
 ---
 id: 19
-"comments: true"
 title: 'ld: duplicate symbol _g_bit_nth_lsf Mac OSX Leopard/Darwin'
 date: 2009-07-07T17:41:46+01:00
 author: Mischa
