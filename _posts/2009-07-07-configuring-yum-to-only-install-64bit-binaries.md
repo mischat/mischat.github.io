@@ -1,5 +1,6 @@
 ---
 id: 24
+"comments: true"
 title: Configuring Yum to only install 64bit binaries
 date: 2009-07-07T18:15:04+01:00
 author: Mischa

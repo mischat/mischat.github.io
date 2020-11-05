@@ -1,5 +1,6 @@
 ---
 id: 348
+"comments: true"
 title: 'NQUADS -> TRIG &#8230; A Noddy Perl Script'
 date: 2010-10-22T16:18:50+01:00
 author: Mischa

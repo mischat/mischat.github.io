@@ -1,5 +1,6 @@
 ---
 id: 72
+"comments: true"
 title: Inode Failure
 date: 2009-07-08T14:21:25+01:00
 author: Mischa

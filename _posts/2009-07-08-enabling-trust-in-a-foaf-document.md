@@ -1,5 +1,6 @@
 ---
 id: 53
+"comments: true"
 title: Enabling Trust in a FOAF Document
 date: 2009-07-08T12:13:15+01:00
 author: Mischa

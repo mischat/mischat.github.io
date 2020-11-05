@@ -1,5 +1,6 @@
 ---
 id: 27
+"comments: true"
 title: Timemachine to a Linux Box
 date: 2009-07-07T18:22:11+01:00
 author: Mischa

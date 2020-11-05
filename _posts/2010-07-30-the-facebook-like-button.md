@@ -1,5 +1,6 @@
 ---
 id: 148
+"comments: true"
 title: The Facebook Like Button, and how it is following you around the web
 date: 2010-07-30T01:13:32+01:00
 author: Mischa

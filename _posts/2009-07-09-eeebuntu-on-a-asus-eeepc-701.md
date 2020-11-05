@@ -1,5 +1,6 @@
 ---
 id: 82
+"comments: true"
 title: EEEbuntu on a ASUS EEEpc 701
 date: 2009-07-09T12:18:15+01:00
 author: Mischa

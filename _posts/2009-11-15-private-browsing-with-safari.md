@@ -1,5 +1,6 @@
 ---
 id: 122
+"comments: true"
 title: Private Browsing with Safari
 date: 2009-11-15T21:38:33+01:00
 author: Mischa

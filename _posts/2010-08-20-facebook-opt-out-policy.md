@@ -1,5 +1,6 @@
 ---
 id: 237
+"comments: true"
 title: 'Facebook and their Horrible &#8220;OPT-OUT&#8221; Policy'
 date: 2010-08-20T13:24:26+01:00
 author: Mischa

@@ -1,5 +1,6 @@
 ---
 id: 480
+"comments: true"
 title: 'shareNice : unintrusive social sharing'
 date: 2011-07-19T20:49:49+01:00
 author: Mischa

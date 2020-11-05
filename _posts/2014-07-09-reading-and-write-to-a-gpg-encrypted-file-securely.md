@@ -1,5 +1,6 @@
 ---
 id: 589
+"comments: true"
 title: 'Reading and Writing to a GPG encrypted file &#8220;securely&#8221;'
 date: 2014-07-09T00:27:22+01:00
 author: Mischa

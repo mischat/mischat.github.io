@@ -1,5 +1,6 @@
 ---
 id: 225
+"comments: true"
 title: OpenID, WordPress 3.0.1 and Brokenness
 date: 2010-08-20T12:17:06+01:00
 author: Mischa
