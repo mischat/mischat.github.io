@@ -19,7 +19,7 @@ social:
     - https://github.com/mischat
     - https://keybase.io/mischat
 
-paginate: 5
+paginate: 3
 paginate_path: "/blog/page/:num/"
 
 permalink: /blog/:year/:month/:day/:title/
