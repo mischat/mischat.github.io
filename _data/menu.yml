@@ -31,7 +31,7 @@ entries:
 
   - title: blog
     post_list: true
-    url: false
+    url: blog
     entries: false
 
   - title: rss
