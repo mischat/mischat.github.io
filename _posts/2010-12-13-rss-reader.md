@@ -26,7 +26,7 @@ So, I made a start at knocking together my own RSS reader which I can use to cat
 
 It was really easy to do not more than an hours work. I am going to start parsing in the descriptions of the items in the RSS feeds, but sadly this isn&#8217;t trivial, people are starting to flood their streams with linked to google-analytics, to facebook share (including links to icons hosted on facebook.com [naughty]), and other nastiness. So I will have to write some code to pull out all the evil in the descriptions before adding them to <https://mmt.me.uk/blog/rss/>, I will update my blog when I get round it to it. I can also release code if people want, just shout&#8230;
 
-[<img src="https://mmt.me.uk/blog/wp-content/uploads/2010/12/Screen-shot-2010-12-12-at-23.03.04.png" alt="" title="Simple HTML based RSS Reader" width="95%" class="aligncenter size-full wp-image-458" />](https://mmt.me.uk/blog/wp-content/uploads/2010/12/Screen-shot-2010-12-12-at-23.03.04.png)
+[<img src="https://mmt.me.uk/blog/uploads/2010/12/Screen-shot-2010-12-12-at-23.03.04.png" alt="" title="Simple HTML based RSS Reader" width="95%" class="aligncenter size-full wp-image-458" />](https://mmt.me.uk/blog/uploads/2010/12/Screen-shot-2010-12-12-at-23.03.04.png)
 
 On a similar topic, the below blog post, states: 
 

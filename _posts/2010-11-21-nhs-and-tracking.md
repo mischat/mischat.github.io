@@ -33,7 +33,7 @@ Host: www.google-analytics.com`
 
 Two of the four third-party sites ([facebook.com](http://www.facebook.com) and [addthiscdn.com](http://addthiscdn.com)) are contacted in order to provider the &#8220;social functionality&#8221; shown in the following screenshot. This intrusive OPT-OUT method of adding social features to the NHS website, in my opinion is NOT acceptable. I would only deem this to be acceptable if NHS has written declarations from the two aforementioned services stating that they WOULDN&#8217;T be tracking peoples&#8217; browsing habits on <http://www.nhs.uk/>. 
 
-[<img src="https://mmt.me.uk/blog/wp-content/uploads/2010/11/nhschoices2010-11-21T17.28.24.png" alt="" title="NHS Choices &quot;Social Features&quot;" width="90%" class="aligncenter size-full wp-image-411" />](https://mmt.me.uk/blog/wp-content/uploads/2010/11/nhschoices2010-11-21T17.28.24.png)
+[<img src="https://mmt.me.uk/blog/uploads/2010/11/nhschoices2010-11-21T17.28.24.png" alt="" title="NHS Choices &quot;Social Features&quot;" width="90%" class="aligncenter size-full wp-image-411" />](https://mmt.me.uk/blog/uploads/2010/11/nhschoices2010-11-21T17.28.24.png)
 
 And the other two sites contacted ([webtrendslive.com](http://webtrendslive.com) and [google-analytics.com](http://www.google-analytics.com)) seemed to be used for analytics purposes. In my view, this task should NOT be outsourced to a third party. If this was a website about pub reviews these third-party services would be acceptable, but due to the nature of the information on the Choices website, I feel the NHS should be hosting their own analytics code. Ok, I understand that the NHS needs to gather statistics about their website usage, but **their user&#8217;s privacy should be of utmost importance**, there do exist a high number of open sourced analytics software which the NHS should run themselves.
 
@@ -41,7 +41,7 @@ In order to show that I am not making this up, I have captured all of the HTTP r
 
 <http://www.nhs.uk/conditions/HIV/Pages/Introduction.aspx>
 
-[<img src="https://mmt.me.uk/blog/wp-content/uploads/2010/11/firebugNetNHS.uk_.2010-11-21T13.49.15.png" alt="" title="Firebug Network traffic output HIV/AIDS Information Page on the NHS" width="90%" class="aligncenter size-full wp-image-371" />](https://mmt.me.uk/blog/wp-content/uploads/2010/11/firebugNetNHS.uk_.2010-11-21T13.49.15.png)
+[<img src="https://mmt.me.uk/blog/uploads/2010/11/firebugNetNHS.uk_.2010-11-21T13.49.15.png" alt="" title="Firebug Network traffic output HIV/AIDS Information Page on the NHS" width="90%" class="aligncenter size-full wp-image-371" />](https://mmt.me.uk/blog/uploads/2010/11/firebugNetNHS.uk_.2010-11-21T13.49.15.png)
 
 The below two files are logs of all HTTP requests made when loading the HIV page:
 
@@ -213,7 +213,7 @@ I should start this section by saying that I am not a lawyer. But it seems like 
 
 
   <p>
-    <a href="https://mmt.me.uk/blog/wp-content/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png"><img src="https://mmt.me.uk/blog/wp-content/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png" alt="Firebug + Firefox + NHS Website + Facebook.com HTTP request + No Like Button" title="Screen shot 2010-11-24 at 17.01.38" width="90%" class="aligncenter size-full wp-image-441" /></a>
+    <a href="https://mmt.me.uk/blog/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png"><img src="https://mmt.me.uk/blog/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png" alt="Firebug + Firefox + NHS Website + Facebook.com HTTP request + No Like Button" title="Screen shot 2010-11-24 at 17.01.38" width="90%" class="aligncenter size-full wp-image-441" /></a>
   </p>
 
 

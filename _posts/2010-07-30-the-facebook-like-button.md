@@ -33,11 +33,11 @@ So, the Facebook Like button can be implemented in one of two ways, using facebo
 So, if you are a facebook user, and you have visited facebook  
 since the last time you cleared you cookies, you will have a facebook cookie in your browser. It is this cookie which allows facebook to inform you of how many of your friends have liked the page your browser is currently pointing to. An example of functionality can be seen in the below screenshot.
 
-[<img loading="lazy" src="https://mmt.me.uk/blog/wp-content/uploads/2010/07/max.png" alt="fblike" title="Max and Facebook Like" width="412" height="75" class="alignnone size-full wp-image-190" />](https://mmt.me.uk/blog/wp-content/uploads/2010/07/max.png)
+[<img loading="lazy" src="https://mmt.me.uk/blog/uploads/2010/07/max.png" alt="fblike" title="Max and Facebook Like" width="412" height="75" class="alignnone size-full wp-image-190" />](https://mmt.me.uk/blog/uploads/2010/07/max.png)
 
 I am aware that if you are signed out of facebook you wont see your list of friends which are have already clicked the like button, you will end up seeing something like:
 
-[<img loading="lazy" src="https://mmt.me.uk/blog/wp-content/uploads/2010/07/max2.png" alt="not logged in" title="Facebook Like Button sans logged in" width="342" height="65" class="alignnone size-full wp-image-194" />](https://mmt.me.uk/blog/wp-content/uploads/2010/07/max2.png)
+[<img loading="lazy" src="https://mmt.me.uk/blog/uploads/2010/07/max2.png" alt="not logged in" title="Facebook Like Button sans logged in" width="342" height="65" class="alignnone size-full wp-image-194" />](https://mmt.me.uk/blog/uploads/2010/07/max2.png)
 
 So, given that the Like button is an iFrame, i.e. it is actually hosted on www.facebook.com, it means that facebook can read your facebook.com [cookies](http://en.wikipedia.org/wiki/HTTP_cookie), and they can tell whether you are logged in (to show you which are of your friends have &#8220;liked&#8221; the page before you). And well, technically this implies that they know _who you are_ which enables them to tell whether you are logged in or not. 
 
@@ -99,7 +99,7 @@ http://www.facebook.com/widgets/like.php?*<br />
 
 The following screenshot, shows what my current step looks like in Adblocker plus: 
 
-[![Adblock](https://mmt.me.uk/blog/wp-content/uploads/2010/07/adblock.png "Adblock Facebook Like buttons")](https://mmt.me.uk/blog/wp-content/uploads/2010/07/adblock.png)
+[![Adblock](https://mmt.me.uk/blog/uploads/2010/07/adblock.png "Adblock Facebook Like buttons")](https://mmt.me.uk/blog/uploads/2010/07/adblock.png)
 
 My colleague Vaidas Jablonskis (who is awesome), pointed me to [Adbocker Plus](http://adblockplus.org/) which is also totally awesome 🙂
 

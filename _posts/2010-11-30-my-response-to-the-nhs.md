@@ -35,7 +35,7 @@ Do have a look at the following page on your website, there is NO like button, a
 
 The following screenshot illustrates this. People are free to replicate, all you need is Firefox and the Firebug plugin (both free and open source). 
 
-[<img src="https://mmt.me.uk/blog/wp-content/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png" alt="Firebug + Firefox + NHS Website + Facebook.com HTTP request + No Like Button" title="Screen shot 2010-11-24 at 17.01.38" width="90%" class="aligncenter size-full wp-image-441" />](https://mmt.me.uk/blog/wp-content/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png)
+[<img src="https://mmt.me.uk/blog/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png" alt="Firebug + Firefox + NHS Website + Facebook.com HTTP request + No Like Button" title="Screen shot 2010-11-24 at 17.01.38" width="90%" class="aligncenter size-full wp-image-441" />](https://mmt.me.uk/blog/uploads/2010/11/Screen-shot-2010-11-24-at-17.01.38.png)
 
 I also talked about how there is a German website which changed the manner in which it implemented the Like button functionality in a non-intrusive manner. That is, a manner which does NOT send any information to Facebook.com unless the user ACTIVELY CLICKS (i.e. OPT-IN) the Like button; quoting my blog post.
 

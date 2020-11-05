@@ -33,7 +33,7 @@ So, what is different about shareNice, and why should you choose to use it?
 
 Below is an example screenshot of the shareNice tool being used on  [The University of Southampton&#8217;s OpenData site](http://data.southampton.ac.uk).
 
-[<img loading="lazy" alt="shareNice example" src="https://mmt.me.uk/blog/wp-content/uploads/2011/07/soton-shareNice.png" title="data.southampton.ac.uk shareNice integration" width="427" height="282" />](http://data.southampton.ac.uk/)
+[<img loading="lazy" alt="shareNice example" src="https://mmt.me.uk/blog/uploads/2011/07/soton-shareNice.png" title="data.southampton.ac.uk shareNice integration" width="427" height="282" />](http://data.southampton.ac.uk/)
 
 
 
