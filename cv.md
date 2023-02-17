@@ -7,22 +7,29 @@ comments: false
 Summary
 -------
 
-I am a strategically minded creative technologist, who strives to help businesses achieve their true potential by harnessing cutting edge technology to solve product needs.
+Firstly, I am a dad and then a technologist. Over the years I have been lucky enough to help design and build products using the cutting edge of technology. I was an early elastic compute / cloud adopter, I built businesses that utilised machine learning and AI, and am currently deep down the blockchain rabbit-hole, looking to disrupt centralised entities with code.
 
-I am currently the Founding CTO of Monolith (formerly known as TokenCard), an Ethereum Project who raised $16m worth of crypto in 6 mins in one of the first ICOs back in 2017. I was brought in to lead Monolith's product and engineering team to help define a technology vision to build the world's first decentralised banking experience on top of the Ethereum blockchain. Prior to Monolith I was central in building four startups, Garlik & PeerIndex, both of which were acquired for their technological advances, as well as being a part of the core team who built State's unique Opinion Network and I also was the CTO of Antidote.
+I am currently CTO of Boson Protocol. Boson Protocol is a trust-minimised protocol for the exchange of off-chain items with on chain tokens. Our vision is to bring decentralised commerce to the Internet by enable the exchange of physical goods via a blockchain, without the need for a trusted central entity to facilitate fair exchange.
+
+Before that I was Founding CTO of Monolith (formerly known as TokenCard), I was brought in to lead Monolith's product and engineering team to help define a technology vision to build the world's first decentralised banking experience on top of the Ethereum blockchain. Prior to Monolith I have helped build four startups, two of which, Garlik & PeerIndex were acquired for their technological advances, as well as being a part of the core team who built State's unique Opinion Network and I also was the CTO of Antidote, a startup which aims to help accelerate clinical research through clinical trial recruitment.
 
 I hold a PhD from the University of Southampton supervised by Professor Sir Nigel Shadbolt (Principal of Jesus College, Oxford), and an AI degree from Edinburgh University
 
 I am passionate about the future of an open, equitable internet. I have had the pleasure of working with Sir Tim Berners-Lee in two of the five startups I have been involved in and used to be an active member of the World Wide Web Consortium (W3C). The W3C is an international community that develops open standards to ensure the long-term growth of the Web. I have contributed to the long term future of the web by participating in the W3C’s RDF Working Group in the design of the Turtle specification, and co-edited the W3C’s Social Web XG's Report entitled: "A Standards-based, Open and Privacy-aware Social Web".
 
-  
-
-Experience
 ----------
 
-#### Founding CTO – Monolith [https://monolith.xyz/](https://monolith.xyz/) Jan '18 - present
+#### CTO – Boson Protocol [https://bosonprotocol.io/](https://bosonprotocol.io/) Aug '21 - present
+
+*   At Boson Protocol we have built out [https://github.com/bosonprotocol/boson-protocol-contracts](our protocol on top of the EVM) to support trust-minimised exchange of off-chain items with on-chain tokens. The primary use-case for our protocol is to facilitate fair-exchange of physical goods between buyers and sellers over the internet in a permissionless and borderless manner.
+
+*   During my time at Boson Protocol, I have built out a client-side only (backend-less) commerce experience [https://bosonapp.io/](https://bosonapp.io/), a blockchain enabled metaverse shopping experience in Decentraland [https://bosonportal.io/](Boson Portal), as well as building out two versions of the core protocol, the latest and greatest one builds on top of the [https://eips.ethereum.org/EIPS/eip-2535]('ERC-2535: Diamonds, Multi-Facet Proxy) to achieve upgradeability.
+
+#### Founding CTO – Monolith [https://monolith.xyz/](https://monolith.xyz/) Jan '18 - Jan '21
 
 *   Monolith’s vision is to realise the token economy by establishing it in daily life, and we’ve started with money. Our mission is to build a consumer banking experience for the crypto world with the integrity of decentralisation. One that is as simple, elegant and as useful as any challenger bank, with a fundamental and crucial difference; our users need never relinquish control of their assets. We believe that through blockchain enabled decentralisation we can build valuable services that are globally accessible, where users aren’t the product and where transparency regulates our actions – unlike anything before!
+
+*   Monolith was an Ethereum Project who raised $16m worth of crypto in 6 mins in one of the first ICOs back in 2017. Core to design of Monolith was the [https://github.com/tokencard/contracts](Monolith Contract Wallet) that enabled us to deliver a true self-custodial banking experience on top of Ethereum.
 
 #### CTO – Antidote [https://antidote.me/](https://antidote.me/) Sep '16 - Dec '17
 
@@ -31,11 +38,13 @@ Experience
 #### CTO – State [https://state.com/](https://state.com/) Apr '14 – Jul '16
 
 *   As a key member of the executive team I helped set strategic direction and define key business metrics whilst overseeing technology and product development. State is an intelligent opinion network that made use of novel technologies to organise the world’s opinions. At State I was chosen to team up with Alex Asseily, founder of Jawbone, and Sir Tim Berners-Lee (amongst others) to create one of the most powerful and innovative Semantic platforms by fusing a rich Topic Graph with state of the art Natural Language Processing techniques to power a fully functional mobile-first social network. Upon analysis of State’s user base it became apparent that users who received notifications from other people within the network within their first 48 hours on the platform were seven times more likely to become long term users. It was this key user retention metric that drove the innovations in State’s semantic technology.
+
 *   Brought Product & Engineering together into one team focused on delivering against key business metrics. Performed a large redesign of the system architecture removing bloat and ensuring that the team focused on solving the right problems and ensuring that the team didn’t reinvent the wheel. Furthermore I moved the platform towards an efficient SOA architecture whilst speeding up product iteration cycles and saving on operational costs by putting in place a DevOps framework.
 
 #### CTO – PeerIndex [http://www.peerindex.com/](http://www.peerindex.com/) Apr '13 – Apr '14
 
 *   As CTO of PeerIndex I led the design and development of a world-class big-data platform that processed 10% of the Twitter firehose, in real-time, by applying our model for measuring influence to show how messages spread around the social web. I led and helped form the team of engineers and data scientists who turned this novel dataset into a valuable insights product for marketers. PeerIndex exited to Brandwatch in 2014.
+
 *   Pivotal to PeerIndex’s success was the flexibility and power of the data warehouse created, which housed a 3 month rolling window of processed Twitter data. The flexibility enabled PeerIndex to find product market fit in the data insights space in record time. At PeerIndex the big data platform made use of Hadoop, Hive, Pig and Amazon’s Redshift for batch processing and used Storm for real-time analytics to extract insights from a dataset of 200 million users.
 
 #### Head of Research Engineering – PeerIndex [http://www.peerindex.com/](http://www.peerindex.com/) Dec '11 – Apr '13
@@ -45,8 +54,6 @@ Experience
 #### Senior Research Engineering – Garlik [http://www.garlik.com/](http://www.garlik.com/) Aug '08 - Dec '11
 
 *   A key member Garlik’s engineering team that spun out of Southampton University. I helped develop Garlik’s core Semantic Web technologies that powered its fintech product DataPatrol. Garlik’s technology still makes up one of the key components of Experian’s CreditExpert (acquired in 2011) and it is the single largest Semantic Technology system in production in the world, serving over 10 million people in the UK. At Garlik, one of the innovative projects we built was QDOS, a Semantic Web powered distributed social network, pushing the boundaries of RDF and SPARQL on the web.
-
-  
 
 Education
 ---------
@@ -62,7 +69,6 @@ _Supervisors_: Professor Sir Nigel R. Shadbolt & Dr David E. Millard
 
 #### International Baccalaureate – Tehran International School Sep '96 – Jun '98
 
-  
 
 Other Positions Held
 --------------------
