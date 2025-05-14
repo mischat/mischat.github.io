@@ -9,15 +9,21 @@ Summary
 
 Firstly, I am a dad and then a technologist. Over the years I have been lucky enough to help design and build products using the cutting edge of technology. I was an early elastic compute / cloud adopter, I built businesses that utilised machine learning and AI, and am currently deep down the blockchain rabbit-hole, looking to disrupt centralised entities with code.
 
-I am currently CTO of Boson Protocol. Boson Protocol is a trust-minimised protocol for the exchange of off-chain items with on chain tokens. Our vision is to bring decentralised commerce to the Internet by enable the exchange of physical goods via a blockchain, without the need for a trusted central entity to facilitate fair exchange.
+I am currently CTO of Alluvial Finance. Alluvial is a software development company offering a suite of enterprise-grade staking products and services. We're focused on enabling mainstream adoption and participation in proof of stake blockchains. 
 
-Before that I was Founding CTO of Monolith (formerly known as TokenCard), I was brought in to lead Monolith's product and engineering team to help define a technology vision to build the world's first decentralised banking experience on top of the Ethereum blockchain. Prior to Monolith I have helped build four startups, two of which, Garlik & PeerIndex were acquired for their technological advances, as well as being a part of the core team who built State's unique Opinion Network and I also was the CTO of Antidote, a startup which aims to help accelerate clinical research through clinical trial recruitment.
+Before that I was CTO at Boson Protocol. Boson Protocol is a trust-minimised protocol for the exchange of off-chain items with on chain tokens. Boson Protocol brought decentralised commerce to the Internet by enable the exchange of Real World Assets (RWAs) via a set of smart contracts, without the need for a trusted central entity to facilitate fair exchange.
+
+And before that I was Founding CTO of Monolith (formerly known as TokenCard), I was brought in to lead Monolith's product and engineering team to help define a technology vision to build the world's first decentralised banking experience on top of the Ethereum blockchain. Prior to Monolith I have helped build four startups, two of which, Garlik & PeerIndex were acquired for their technological advances, as well as being a part of the core team who built State's unique Opinion Network and I also was the CTO of Antidote, a startup which aims to help accelerate clinical research through clinical trial recruitment.
 
 I hold a PhD from the University of Southampton supervised by Professor Sir Nigel Shadbolt (Principal of Jesus College, Oxford), and an AI degree from Edinburgh University
 
 I am passionate about the future of an open, equitable internet. I have had the pleasure of working with Sir Tim Berners-Lee in two of the five startups I have been involved in and used to be an active member of the World Wide Web Consortium (W3C). The W3C is an international community that develops open standards to ensure the long-term growth of the Web. I have contributed to the long term future of the web by participating in the W3C’s RDF Working Group in the design of the Turtle specification, and co-edited the W3C’s Social Web XG's Report entitled: "A Standards-based, Open and Privacy-aware Social Web".
 
 ----------
+
+#### CTO – Alluvial Finance [https://alluvial.finance/](https://alluvial.finance/) Oct '23 - present
+
+*   At Alluvial Finance we have built the [https://liquidcollective.io/](Liquid Collective Protocol) an institutional grade Liquid Staking Protocol ([https://defillama.com/protocol/liquid-collective?denomination=ETH](LsETH)) as well as the Stake Management System ([https://alluvial.finance/sms/](SMS)). SMS is a modular staking product that give's its users full control of their assets, helps automated workflows, openness up liquidity, and enables custom validator operator coordination for Ethereum staking at scale. Alluvial Finance is a SOC2 compliant institutional staking provider. 
 
 #### CTO – Boson Protocol [https://bosonprotocol.io/](https://bosonprotocol.io/) Aug '21 - present
 
