@@ -23,19 +23,19 @@ I am passionate about the future of an open, equitable internet. I have had the 
 
 #### CTO – Alluvial Finance [https://alluvial.finance/](https://alluvial.finance/) Oct '23 - present
 
-*   At Alluvial Finance we have built the [https://liquidcollective.io/](Liquid Collective Protocol) an institutional grade Liquid Staking Protocol ([https://defillama.com/protocol/liquid-collective?denomination=ETH](LsETH)) as well as the Stake Management System ([https://alluvial.finance/sms/](SMS)). SMS is a modular staking product that give's its users full control of their assets, helps automated workflows, openness up liquidity, and enables custom validator operator coordination for Ethereum staking at scale. Alluvial Finance is a SOC2 compliant institutional staking provider. 
+*   At Alluvial Finance we have built the [Liquid Collective Protocol](https://liquidcollective.io/) an institutional grade Liquid Staking Protocol [LsETH](https://defillama.com/protocol/liquid-collective?denomination=ETH) as well as the [Stake Management System (SMS)](https://alluvial.finance/sms/](SMS). SMS is a modular staking product that give's its users full control of their assets, helps automated workflows, openness up liquidity, and enables custom validator operator coordination for Ethereum staking at scale. Alluvial Finance is a SOC2 compliant institutional staking provider. 
 
 #### CTO – Boson Protocol [https://bosonprotocol.io/](https://bosonprotocol.io/) Aug '21 - present
 
-*   At Boson Protocol we have built out [https://github.com/bosonprotocol/boson-protocol-contracts](our protocol on top of the EVM) to support trust-minimised exchange of off-chain items with on-chain tokens. The primary use-case for our protocol is to facilitate fair-exchange of physical goods between buyers and sellers over the internet in a permissionless and borderless manner.
+*   At Boson Protocol we have built out [EVM based protocol](https://github.com/bosonprotocol/boson-protocol-contracts) to support trust-minimised exchange of off-chain items with on-chain tokens. The primary use-case for our protocol is to facilitate fair-exchange of physical goods between buyers and sellers over the internet in a permissionless and borderless manner.
 
-*   During my time at Boson Protocol, I have built out a client-side only (backend-less) commerce experience [https://bosonapp.io/](https://bosonapp.io/), a blockchain enabled metaverse shopping experience in Decentraland [https://bosonportal.io/](Boson Portal), as well as building out two versions of the core protocol, the latest and greatest one builds on top of the [https://eips.ethereum.org/EIPS/eip-2535]('ERC-2535: Diamonds, Multi-Facet Proxy) to achieve upgradeability.
+*   During my time at Boson Protocol, I have built out a client-side only (backend-less) commerce experience [https://bosonapp.io/](https://bosonapp.io/), a blockchain enabled metaverse shopping experience in Decentraland [Boson Portal](https://bosonportal.io/), as well as building out two versions of the core protocol, the latest and greatest one builds on top of the ['ERC-2535: Diamonds, Multi-Facet Proxy](https://eips.ethereum.org/EIPS/eip-2535) to achieve upgradeability.
 
 #### Founding CTO – Monolith [https://monolith.xyz/](https://monolith.xyz/) Jan '18 - Jan '21
 
 *   Monolith’s vision is to realise the token economy by establishing it in daily life, and we’ve started with money. Our mission is to build a consumer banking experience for the crypto world with the integrity of decentralisation. One that is as simple, elegant and as useful as any challenger bank, with a fundamental and crucial difference; our users need never relinquish control of their assets. We believe that through blockchain enabled decentralisation we can build valuable services that are globally accessible, where users aren’t the product and where transparency regulates our actions – unlike anything before!
 
-*   Monolith was an Ethereum Project who raised $16m worth of crypto in 6 mins in one of the first ICOs back in 2017. Core to design of Monolith was the [https://github.com/tokencard/contracts](Monolith Contract Wallet) that enabled us to deliver a true self-custodial banking experience on top of Ethereum.
+*   Monolith was an Ethereum Project who raised $16m worth of crypto in 6 mins in one of the first ICOs back in 2017. Core to design of Monolith was the [Monolith Contract Wallet](https://github.com/tokencard/contracts) that enabled us to deliver a true self-custodial banking experience on top of Ethereum.
 
 #### CTO – Antidote [https://antidote.me/](https://antidote.me/) Sep '16 - Dec '17
 
